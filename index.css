@@ -1,0 +1,23 @@
+h1,h3{
+  text-align: center;
+}
+.main-h1{
+font-family: Cabin;
+
+
+}
+.main-h1 span{
+font-weight: 400;
+
+}
+.main-h3{
+  font-family: arvo;
+
+}
+.circle{
+height: 125px;
+width: 125px;
+border-radius:50%;
+border: 4px #121212 solid;
+margin :0 auto;
+}
