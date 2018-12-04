@@ -6,8 +6,8 @@ align-items: center;
 padding: 0 15px;
 }
 nav{
-  position: absolute;
-  top: 10px;
+  position: fixed;
+  top: 0px;
   left: 15px;
 }
 nav:hover .logo{
@@ -17,7 +17,6 @@ background-color: #ffffff;
 color: #121212;
 border: solid 1px #121212;
 border-radius: 0px;
-text-align: center;
 
 }
 nav:hover .nav{
@@ -31,11 +30,12 @@ padding-top: 20px;
   overflow: hidden;
   background-color: #121212;
   transition: all 0.4s;
+  transition-delay: 0.2s;
   transition-timing-function: ease-out;
   position: relative;
   z-index: 1;
   box-sizing: border-box;
-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
   border: 2px #121212 solid;
 
 }
@@ -60,11 +60,11 @@ text-decoration: none;
 
 .logo{
   transform: translateX(-5px);
-  border: solid 1px #121212;
+  border: solid 1px #ffffff;
   background-size: contain;
   background-repeat: no-repeat;
   width: 171px;
-  border-radius: 0 5px 30px 0;
+  border-radius: 5px 5px 30px 30px;
   font-family: Raleway;
   padding: 15px 15px;
   padding-left: 12px;
@@ -75,6 +75,8 @@ text-decoration: none;
   position: relative;
   z-index: 50;
   cursor: pointer;
+  text-align: center;
+
 }
 
 .hello-link{
