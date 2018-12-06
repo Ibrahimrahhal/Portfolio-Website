@@ -9,6 +9,11 @@ nav{
   position: fixed;
   top: 0px;
   left: 15px;
+  transition: all 0.2s;
+
+}
+nav:hover{
+  top:10px;
 }
 nav:hover .logo{
 transform: scale(1.01);
@@ -64,7 +69,7 @@ text-decoration: none;
   background-size: contain;
   background-repeat: no-repeat;
   width: 171px;
-  border-radius: 5px 5px 30px 30px;
+  border-radius: 0 0 30px 30px;
   font-family: Raleway;
   padding: 15px 15px;
   padding-left: 12px;
@@ -157,6 +162,6 @@ cursor: pointer;
   transition-timing-function: ease-out;
 }
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
-  left: 0;
-  right: 0;
+  left: 12%;
+  right: 12%;
 }
