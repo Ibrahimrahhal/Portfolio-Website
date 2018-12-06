@@ -114,42 +114,37 @@ margin-bottom: 70px;
 /* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////// */
 .skill-wrapper{
-background-color:#ffffff;
-padding: 35px;
-width: 400px;
-margin:0 auto;
-
-clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
-border:2px solid #121212;
-
-}
-
-
-.skills-wrapper{
-display: flex;
-justify-content: space-around;
+padding: 35px 0;
 width: 100%;
-padding: 30px 0;
-background-color: #ffffff;
+
 
 }
+.skill-set{
 
-.skill-upper-wrapper{
-border: 2px #121212 solid;
-height: 500px;
-border-radius: 5px;
-
+  background: linear-gradient(to bottom, #f2f2f2 0%,#ffffff 71%);
+  height: 400px;
+  width: 100%;
+  transform: translateY(-40px);
+  position: relative;z-index: -5;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items:center;
+  justify-content: center;
 }
+
+
+
+
 .skill-h2{
 text-align: center;
 font-family: Cabin;
-color:#121212;
+color:#ffffff;
 font-weight: 400;
-
-
-
-
+background-color: #121212;
+padding: 20px 0 35px 0;
+/* mobile */
+/* clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 80%, 50% 100%, 40% 80%, 0 80%); */
+clip-path: polygon(0 0, 100% 0, 100% 80%, 55% 80%, 50% 100%, 45% 80%, 0 80%);
 }
 
 .skill-h2 span{
