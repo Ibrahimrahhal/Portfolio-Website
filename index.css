@@ -4,11 +4,25 @@ margin: 0;
 
 
 }
+.everything{
 
+  position: relative;
+  z-index: 100;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
 .first-page{
   width: 100%;
   height: 100vh;
+  position:relative;
+  z-index:11;
+}
 
+#particles-js{
+
+  height:100%; width:100%; position:fixed; z-index:-100;
 }
 .full-page-hero{
 height: calc(100vh - 300px);
@@ -93,7 +107,7 @@ margin: 0 auto;
 color: #121212;
 text-align: center;
 font-family: 'Open Sans';
-margin-bottom: 70px;
+margin-bottom: 20px;
 
 
 
