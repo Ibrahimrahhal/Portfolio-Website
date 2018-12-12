@@ -9,6 +9,7 @@
     <link href="scrollbar.css" rel="stylesheet">
     <link href="skill.css" rel="stylesheet">
     <link href="code_slide.css" rel="stylesheet">
+    <link href="education.css" rel="stylesheet">
 
 
 
@@ -30,7 +31,7 @@
     </div>
     <div class="nav-cont">
     <div class="nav">
-      <a href="#" class="nav-link hvr-underline-from-center">Skills Set</a>
+      <a href="#skill" class="nav-link hvr-underline-from-center">Skills Set</a>
       <a href="#" class="nav-link hvr-underline-from-center">Education</a>
       <a href="#" class="nav-link hvr-underline-from-center">Projects</a>
       <a href="#" class="nav-link hvr-underline-from-center">Contact</a>
@@ -63,7 +64,7 @@
     </div>
 
 
-<h2 class="thing-im-good-at">- Things I Can Do -</h2>
+<h2 class="thing-im-good-at" id="skill">[ Things I Can Do ]</h2>
 <!--
 <div class="skill-wrapper">
   <h2 class="skill-h2">{ Coding }</h2> -->
@@ -97,6 +98,11 @@
           </div>
 
           </div>
+          <div class="swiper-slide slide_foundation">
+          <div class="foundation_logo">
+          </div>
+
+          </div>
           <div class="swiper-slide slide_agile">Slide 3</div>
           ...
       </div>
@@ -111,6 +117,27 @@
   </div>
 
 
+  <!-- <div style="
+  width:90%;
+  height:8px;
+  opacity:0.5;
+  background-color:#121212;
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+  margin: 40px auto">
+
+  </div> -->
+  <h2 class="thing-im-good-at designer">[ I'm Also A Designer ]</h2>
+
+  <div class="designer-img">
+
+  </div>
+  <div class="thing-im-good-at" style="font-weight:500;font-size:1.5rem; margin:0; transform:translateY(-80px);">
+    Creating Websites Mockups using Photoshop and Illustrator Nothing Fancy but still Good
+  </div>
+
+<div class="education">
+
+</div>
 
 
   <!-- <div class="skill-set"> -->
@@ -132,15 +159,7 @@
 
   <!-- </div> -->
 <!-- </div> -->
-<div class="skill-wrapper">
-  <h2 class="skill-h2"> { Designing }</h2>
-  <div class="skill-set">
-    <div class="skill">
 
-    </div>
-
-  </div>
-</div>
 
 
 

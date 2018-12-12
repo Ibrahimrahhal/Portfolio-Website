@@ -108,11 +108,15 @@ color: #121212;
 text-align: center;
 font-family: 'Open Sans';
 margin-bottom: 20px;
-
-
+font-size: 2.5rem;
+font-weight: 300;
 
 }
+.designer{
 
+  margin-top: 90px;
+
+}
 
 /* ////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////// */
