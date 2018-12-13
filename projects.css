@@ -37,3 +37,29 @@ grid-template-columns: auto  auto auto;
 justify-content: space-around;
 align-items: center;
 }
+
+.proj-text{
+font-family: "Open Sans";
+text-align: center;
+margin: 15px 0;
+
+}
+
+
+.hover-state{
+background-color: #121212;
+width: 100%;
+height: 100%;
+opacity: 0;
+transition: all 0.2s ease-out;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #ffffff;
+font-family: "Open Sans";
+}
+
+.proj:hover .hover-state{
+opacity: 1;
+
+}
