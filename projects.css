@@ -17,6 +17,7 @@ align-items: center;
 border-radius: 10px;
 box-sizing: border-box;
 opacity: 0.8;
+justify-content: center;
 }
 .img-cont img {
 width: 100%;
