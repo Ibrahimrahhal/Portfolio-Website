@@ -1,8 +1,18 @@
 .education{
-width:100%;
-background-color: #121212;
+width:80%;
+/* background-color: #ffffff; */
 height: 100vh;
+margin:0 auto;
 
 
+}
 
+
+.ju{
+  width: 100%;
+  height: 100%;
+  /* background-image: url('./assets/education/ju.svg'); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
