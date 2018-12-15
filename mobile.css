@@ -12,7 +12,7 @@ nav{
   z-index: 10;
 }
 
-nav:hover .logo{
+.logo-click{
 transform: scale(1.01);
 /* width: 200px; */
 background-color: #ffffff;
@@ -21,7 +21,7 @@ border: solid 1px #121212;
 border-radius: 0px;
 
 }
-nav:hover .nav{
+.nav-click{
 height: 300px;
 border: 2px #121212 solid;
 
@@ -257,5 +257,42 @@ background-image: url('./assets/skills_logo/frameworks_sm.svg');
 
 .foundation_logo{
 background-image: url('./assets/skills_logo/foundation_sm.svg');
+
+}
+
+.education_sm{
+display: block;
+
+}
+
+.edu_sm{
+  margin: 20px auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+}
+.edu-text{
+  transform: translateY(0);
+  margin: 20px 0;
+  margin-top: 60px;
+}
+
+.ju_sm{
+background-image: url('./assets/education/ju_sm.svg');
+
+}
+
+.coursera_sm{
+background-image: url('./assets/education/coursera_sm.svg');
+
+}
+.bc_sm{
+background-image: url('./assets/education/bc_sm.svg');
+
+}
+
+.algo_sm{
+background-image: url('./assets/education/algo_sm.svg');
 
 }

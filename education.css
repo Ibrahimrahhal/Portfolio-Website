@@ -16,3 +16,9 @@ margin:0 auto;
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.edu-text{
+
+  margin:0;
+  transform:translateY(60px);
+}
