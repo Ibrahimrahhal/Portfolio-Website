@@ -12,20 +12,7 @@ nav{
   z-index: 10;
 }
 
-.logo-click{
-transform: scale(1.01);
-/* width: 200px; */
-background-color: #ffffff;
-color: #121212;
-border: solid 1px #121212;
-border-radius: 0px;
 
-}
-.nav-click{
-height: 300px;
-border: 2px #121212 solid;
-
-}
 .nav{
   width: 160px;
   height: 0;
@@ -81,7 +68,20 @@ text-decoration: none;
   text-align: center;
 
 }
+.logo-click{
+transform: scale(1.01);
+/* width: 200px; */
+background-color: #ffffff;
+color: #121212;
+border: solid 1px #121212;
+border-radius: 0px;
 
+}
+.nav-click{
+height: 300px;
+border: 2px #121212 solid;
+
+}
 
 
 .hvr-bounce-to-bottom {
