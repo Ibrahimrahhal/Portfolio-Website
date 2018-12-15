@@ -226,3 +226,36 @@ height: 150px;
   transform: translateY(0);
   font-size: 0.9rem;
 }
+
+.angular_logo{
+background-image: url('./assets/skills_logo/angular_sm.svg');
+
+
+}
+
+.node_logo{
+background-image: url('./assets/skills_logo/backend_sm.svg');
+
+}
+.swiper-container{
+  width :95%;
+  height:400px;
+}
+
+.database_logo{
+background-image: url('./assets/skills_logo/database_sm.svg');
+
+}
+
+
+
+.frameworks_logo{
+background-image: url('./assets/skills_logo/frameworks_sm.svg');
+
+}
+
+
+.foundation_logo{
+background-image: url('./assets/skills_logo/foundation_sm.svg');
+
+}
