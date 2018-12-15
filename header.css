@@ -1,3 +1,7 @@
+@media screen and (min-width:768px) {
+
+
+
 header {
 display: flex;
 height: 60px;
@@ -166,4 +170,5 @@ cursor: pointer;
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
   left: 12%;
   right: 12%;
+}
 }
