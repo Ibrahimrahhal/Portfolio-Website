@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link href="pace.css" rel="stylesheet" />
+    <script src="pace.js"></script>
     <link href="reveal.css" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css?family=Arvo|Cabin:400,500|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
     <link href="header.css" rel="stylesheet">
     <link href="chat.css" rel="stylesheet">
@@ -71,7 +73,11 @@
 <!--
 <div class="skill-wrapper">
   <h2 class="skill-h2">{ Coding }</h2> -->
-  <div class="swiper-container" style ="">
+  <div class="swiper-container" style =""
+       data-aos="zoom-in"
+       data-aos-easing="ease-out-cubic"
+       data-aos-duration="800"
+  >
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
           <!-- Slides -->
@@ -131,16 +137,43 @@
   margin: 40px auto">
 
   </div> -->
-  <h2 class="thing-im-good-at designer">[ I'm Also A Designer ]</h2>
+  <h2 class="thing-im-good-at designer"
+  data-aos="zoom-in"
+  data-aos-easing="ease-out-cubic"
+  data-aos-duration="800"
+  >[ I'm Also A Designer ]</h2>
 
-  <div class="designer-img">
+  <div class="designer-img"
+     data-aos="zoom-in"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="800">
 
   </div>
-  <div class="thing-im-good-at" style="font-weight:500;font-size:1.5rem; margin:0; transform:translateY(-80px);">
+  <div class="thing-im-good-at"
+   style="font-weight:500;
+   font-size:1.5rem;
+    margin:0;
+    transform:translateY(-80px);"
+    data-aos="zoom-in"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="800"
+    >
     Creating Websites Mockups using Photoshop and Illustrator Nothing Fancy but still Good
   </div>
-<h2 class="thing-im-good-at" style="margin:0; transform:translateY(60px);">[ Education ]</h2>
-<div class="education" id="education">
+<h2 class="thing-im-good-at"
+style="margin:0;
+transform:translateY(60px);"
+data-aos="zoom-in"
+data-aos-easing="ease-out-cubic"
+data-aos-duration="800"
+>[ Education ]</h2>
+<div class="education" id="education"
+data-aos="zoom-in"
+data-aos-easing="ease-out-cubic"
+data-aos-duration="800"
+data-aos-delay="500"
+
+>
   <div class="reveal">
   			<div class="slides">
           <section> <img src="./assets/education/ju.svg" alt=""> </section>
@@ -155,11 +188,22 @@
 
 </div>
 <div class="projects" id="projects">
-<h2 class="thing-im-good-at" style="margin:60px 0 60px 0">[Side_Projects]</h2>
+<h2 class="thing-im-good-at" style="margin:60px 0 60px 0"
+data-aos="zoom-in"
+data-aos-easing="ease-out-cubic"
+data-aos-duration="800"
+data-aos-delay="100"
+>[Side_Projects]</h2>
 
 
 <div class="proj-cont">
-  <div class="proj">
+  <div class="proj"
+  data-aos="flip-left"
+  data-aos-easing="ease-out-cubic"
+  data-aos-duration="800"
+  data-aos-delay="200"
+
+  >
   <a class="img-cont" style="background-color:#da1f26;" href="https://www.businesshash.com" target="_blank">
     <img src="assets/projects/bh.svg" alt="" style="width:86%;">
     <div class="hover-state">
@@ -173,7 +217,11 @@
 
 
 
-  <div class="proj">
+  <div class="proj"
+  data-aos="flip-left"
+  data-aos-easing="ease-out-cubic"
+  data-aos-duration="800"
+  data-aos-delay="400">
   <a class="img-cont" style="background-color:#79c79c;"  href="https://www.arabiandevs.com" target="_blank">
     <img src="assets/projects/ad.svg" alt="">
     <div class="hover-state">
@@ -186,7 +234,11 @@ ArabianDevs Website
   </div>
 
 
-  <div class="proj">
+  <div class="proj"
+  data-aos="flip-left"
+  data-aos-easing="ease-out-cubic"
+  data-aos-duration="800"
+  data-aos-delay="600">
   <a class="img-cont" style="background-color:#121212;"  href="https://ibrahimrahhal.github.io/AANG_Deploy/" target="_blank">
     <img src="assets/projects/ang.svg" alt="">
     <div class="hover-state">
@@ -200,8 +252,12 @@ ArabianDevs Website
   </div>
 
 
-  <div class="proj">
-  <a class="img-cont" style="background-color:#079dd4;"  href="#" target="_blank">
+  <div class="proj"
+  data-aos="flip-left"
+  data-aos-easing="ease-out-cubic"
+  data-aos-duration="800"
+  data-aos-delay="600">
+  <a class="img-cont" style="background-color:#079dd4;"  href="https://github.com/Ibrahimrahhal/BlockChain-App" target="_blank">
     <img src="assets/projects/bc.svg" alt="">
     <div class="hover-state">
       Visit Repository
@@ -291,6 +347,10 @@ Simple Blockchain Implementation
     },
   })
   </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
   <script src="reveal.js"></script>
   <script>
   Reveal.initialize({
