@@ -190,3 +190,39 @@ height: 90px;
 width: 90px;
 
 }
+
+
+.proj-cont{
+padding: 30px 20px;
+grid-template-columns:   auto;
+}
+
+
+.img-cont{
+  width: 200px;
+  height: 130px;
+  margin: 0 auto;
+
+
+}
+
+.proj-text{
+font-size: 0.7rem;
+
+}
+
+.thing-im-good-at{
+font-size: 1.8rem;
+
+}
+
+.designer-img{
+width: 95%;
+height: 150px;
+
+
+}
+.design-text{
+  transform: translateY(0);
+  font-size: 0.9rem;
+}
