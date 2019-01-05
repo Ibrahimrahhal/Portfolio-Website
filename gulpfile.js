@@ -22,4 +22,25 @@ gulp.task('default', () =>{
     // }))
 
       .pipe(gulp.dest(__dirname+"/"));
+
+
+
+
+
+console.log("hi");
+        gulp.src(__dirname+"/dest/contact.css")
+            .pipe(importCss({skipComments:false}))
+              .pipe(autoprefixer({
+                cascade: false,
+                flexbox : true,
+                grid :true,
+                browsers: autoprefixBrowsers
+              })).pipe(cleanCSS())
+          //   .pipe(cleanCSS({debug: true}, (details) => {
+          //   console.log(`${details.name}: ${details.stats.originalSize}`);
+          //   console.log(`${details.name}: ${details.stats.minifiedSize}`);
+          // }))
+
+            .pipe(gulp.dest(__dirname+"/"));
+            console.log("hi");
 });

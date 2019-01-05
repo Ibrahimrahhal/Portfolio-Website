@@ -19,6 +19,6 @@ margin:0 auto;
 
 .edu-text{
 
-  margin:0;
-  transform:translateY(60px);
+  margin-top: 35px;
+  transform:translateY(60px) !important;
 }

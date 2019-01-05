@@ -1,0 +1,34 @@
+body{
+margin: 0;
+padding: 0;
+position: relative;
+
+}
+#particles-js{
+height: 100vh;
+width: 100%;
+position: fixed;
+z-index: -10;
+
+}
+
+.hero{
+  height: 300px;
+  display: absolute;
+  z-index: 1;
+  opacity: 0.8;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 93%, 0 100%);
+}
+
+.proj-name{
+  font-family: "Raleway";
+  text-align: center;
+  margin: 0;
+}
+
+.techs{
+  font-family: "Raleway";
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 7px;
+}
