@@ -131,3 +131,58 @@ overflow: hidden;
   margin: 0 auto;
   background-position: center;
 }
+
+@media screen and (max-width:600px)  {
+    .desc
+    {
+      width: 300px;
+    }
+    .hero{
+      height: 150px;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 96%, 0 100%);
+
+    }
+    .img{
+      width: 150px;
+
+    }
+    .proj-name{
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+
+    .techs{
+      font-size: 1rem;
+    }
+    .btn{
+      /* height: 35px; */
+    font-size:1rem;
+    margin-bottom: 10px;
+    }
+    .btns{
+      flex-direction: column;
+
+    }
+    .read-btn{
+      order: 1;
+    }
+}
+@media screen and (max-width:720px) and (min-width:601px) {
+    .desc
+    {
+      width: 500px;
+    }
+    .hero{
+      height: 230px;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 96%, 0 100%);
+
+    }
+    .img{
+      width: 220px;
+
+    }
+    .proj-name{
+      margin-top: 20px;
+    }
+
+}

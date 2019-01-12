@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>Project Name</title>
     <link rel="stylesheet" href="project.css">
-    <link rel="stylesheet" href="gallery/index.css">
-    <link rel="stylesheet" href="gallery/default_skin/default_skin.css">
+    <link rel="stylesheet" href="../scrollbar.css">
+    <link rel="stylesheet" href="../gallery/index.css">
+    <link rel="stylesheet" href="../gallery/default_skin/default_skin.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo|Cabin:400,500|Raleway" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
   <body>
@@ -14,7 +16,7 @@
     </div>
     <div class="all">
       <div class="hero" style="background-color:#da1f26;">
-        <div class="img" style="background-image:url('./assets/projects/bh.svg')"
+        <div class="img" style="background-image:url('../assets/projects/bh.svg')"
   >
 
         </div>
