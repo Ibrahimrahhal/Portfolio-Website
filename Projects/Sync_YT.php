@@ -16,7 +16,7 @@
     </div>
     <div class="all">
       <div class="hero" style="background-color:#da1f26;">
-        <div class="img" style="background-image:url('../assets/projects/bh.svg')"
+        <div class="img" style="background-image:url('../assets/projects/sync.svg')"
   >
 
         </div>
