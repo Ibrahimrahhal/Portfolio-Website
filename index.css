@@ -261,12 +261,3 @@ font-weight: 600;
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
-
-.github-icon{
-  background-image: url("./assets/github.svg");
-  height: 23px;
-  width: 33px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
