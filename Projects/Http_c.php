@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Project Name</title>
+    <title>Http Client</title>
     <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="../scrollbar.css">
     <link rel="stylesheet" href="../gallery/index.css">
@@ -21,8 +21,8 @@
 
         </div>
       </div>
-      <h2 class="proj-name">Project Name</h2>
-      <h4 class="techs">Angular - Node js - Html</h4>
+      <h2 class="proj-name">Native Desktop http Client</h2>
+      <h4 class="techs">Electron - Angular - Typescript - css</h4>
 
       <div class="btns">
         <div class="btn hvr-bounce-to-bottom">
@@ -32,7 +32,7 @@
           Read More
         </div>
         <div class="btn hvr-bounce-to-bottom gallery-btn">
-          View Live Copy
+          View Gallery
         </div>
       </div>
       <div class="desc">
@@ -111,7 +111,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="appp.js"></script>
+    <script src="../appp.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

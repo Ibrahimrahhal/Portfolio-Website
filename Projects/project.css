@@ -94,7 +94,8 @@ z-index: -10;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.5s
+  transition: all 0.5s;
+  text-decoration: none;
 }
 
 .desc{
