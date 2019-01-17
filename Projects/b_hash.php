@@ -19,6 +19,8 @@
         <div class="img" style="background-image:url('../assets/projects/bh.svg')"
   >
 
+  
+
         </div>
       </div>
       <h2 class="proj-name">Business Hash Website</h2>
