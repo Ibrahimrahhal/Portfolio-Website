@@ -50,7 +50,7 @@ Your Screen Size is Not Suppoted
 
       </div>
       <label for="name">Given Name</label>
-      <input type="text" name="name" class="input_feild" placeholder="Erwin Smith">
+      <input type="text" name="name" class="input_feild" placeholder="Erwin Smith" onblur="joi.valfun(event)">
       <div class="space">
 
       </div>
@@ -71,5 +71,11 @@ Your Screen Size is Not Suppoted
     </form>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="appp.js"></script>
+    <script src="form_validation.js"></script>
+    <script type="text/javascript">
+
+
+    </script>
+
   </body>
 </html>

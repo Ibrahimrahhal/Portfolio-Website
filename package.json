@@ -4,7 +4,8 @@
   "description": "",
   "main": "appp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": " browserify  joi.js --s joi > form_validation.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,13 @@
   },
   "homepage": "https://github.com/Ibrahimrahhal/MyWebsite#readme",
   "dependencies": {
+    "browserify": "^16.2.3",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-cli": "^2.0.1",
-    "gulp-cssimport": "^7.0.0"
+    "gulp-cssimport": "^7.0.0",
+    "joi-browser": "^13.4.0",
+    "lodash": "^4.17.11"
   }
 }
