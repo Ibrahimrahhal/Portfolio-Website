@@ -55,7 +55,7 @@ Your Screen Size is Not Suppoted
 
       </div>
       <label for="email">Email</label>
-      <input type="email" name="email" class="input_feild" placeholder="Levi.Ackerman@example.com">
+      <input type="email" name="email" class="input_feild" placeholder="Levi.Ackerman@example.com" onblur="joi.valfun(event)">
       <div class="space">
 
       </div>
@@ -66,7 +66,7 @@ Your Screen Size is Not Suppoted
         else echo "Project Details";
 
         ?></label>
-      <textarea name="project" rows="8" cols="3"></textarea>
+      <textarea name="project" rows="8" cols="3" onblur="joi.valfun(event)"></textarea>
       <button type="submit" name="submit" class="project-btn-hover">Send</button>
     </form>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
