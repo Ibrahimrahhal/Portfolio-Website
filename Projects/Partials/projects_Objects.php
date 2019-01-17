@@ -49,6 +49,37 @@ array_push($objects, new Project("arabicnamegenerator",
                                 ));
 
 
+
+
+
+//Creating Arabic Name Generator Object
+
+array_push($objects, new Project("youtubesync",
+                                  "Synchronous Realtime Youtube Player",
+                                  "Node js - Express - Socket IO - Youtube Player API - css - html",
+                                  "#da1f26",
+                                  "../assets/projects/sync.svg",
+                                  true,
+                                  "https://syncyt.herokuapp.com/",
+                                  "shit",
+                                  null
+                                ));
+
+
+//Creating BusinessHash Object
+
+array_push($objects, new Project("youtubesync",
+                                  "Synchronous Realtime Youtube Player",
+                                  "Node js - Express - Socket IO - Youtube Player API - css - html",
+                                  "#da1f26",
+                                  "../assets/projects/sync.svg",
+                                  true,
+                                  "https://syncyt.herokuapp.com/",
+                                  "shit",
+                                  null
+                                ));
+
+
 $objects[0]->renderProject();
 
 
