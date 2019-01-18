@@ -1,137 +1,128 @@
-.swiper-container{
-  width :80%;
-  height:400px;
+.swiper-container {
+  width: 80%;
+  height: 400px;
 }
-.slide_angular{
-display: flex;
-justify-content: center;
-align-items: center;
-opacity: 0.8;
 
+.slide_angular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
 }
+
 .slide_angular .maintext {
-font: "Open Sans";
-color:#121212;
-font-size: 2rem;
-width: 350px;
-
+  font: "Open Sans";
+  color: #121212;
+  font-size: 2rem;
+  width: 350px;
 }
+
 .slide_angular .maintext .angular {
-color: #e23237;
-
+  color: #e23237;
 }
+
 .slide_angular .maintext .large {
-font-size: 2.8rem;
-color:#007aff;
-
-
-}
-.angular_logo{
-background-image: url('./assets/skills_logo/angular.svg');
-height: 80%;
-width: 100%;
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-
+  font-size: 2.8rem;
+  color: #007aff;
 }
 
-
-.node_logo{
-background-image: url('./assets/skills_logo/backend.svg');
-height: 80%;
-width: 100%;
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-
+.angular_logo {
+  background-image: url('./assets/skills_logo/angular.svg');
+  height: 80%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.slide_node{
-display: flex;
-justify-content: center;
-align-items: center;
-opacity: 0.8;
-
+.node_logo {
+  background-image: url('./assets/skills_logo/backend.svg');
+  height: 80%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-
-
-.database_logo{
-background-image: url('./assets/skills_logo/database.svg');
-height: 80%;
-width: 100%;
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-
+.electron_logo {
+  background-image: url('./assets/skills_logo/desktop.svg');
+  height: 80%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.slide_database{
-display: flex;
-justify-content: center;
-align-items: center;
-opacity: 0.7;
-
+.slide_node {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
 }
 
-
-.frameworks_logo{
-background-image: url('./assets/skills_logo/frameworks.svg');
-height: 80%;
-width: 100%;
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-
+.database_logo {
+  background-image: url('./assets/skills_logo/database.svg');
+  height: 80%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.slide_frameworks{
-display: flex;
-justify-content: center;
-align-items: center;
-opacity: 0.7;
-
-}
-.foundation_logo{
-background-image: url('./assets/skills_logo/foundation.svg');
-height: 80%;
-width: 100%;
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-
+.slide_database {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
 }
 
-.slide_foundation{
-display: flex;
-justify-content: center;
-align-items: center;
-opacity: 0.8;
-
+.frameworks_logo {
+  background-image: url('./assets/skills_logo/frameworks.svg');
+  height: 80%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-
-
-
-
-.designer-img{
-width: 500px;
-height: 300px;
-background-image: url('./assets/skills_logo/designer.svg');
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-opacity: 1;
-transform:translateY(-60px);
-margin: 0 auto;
-
-
+.slide_frameworks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
 }
 
-.design-text{
-  font-weight:500;
-  font-size:1.5rem;
-   margin:0;
-   transform:translateY(-80px);
+.foundation_logo {
+  background-image: url('./assets/skills_logo/foundation.svg');
+  height: 80%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide_foundation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.designer-img {
+  width: 500px;
+  height: 300px;
+  background-image: url('./assets/skills_logo/designer.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+  transform: translateY(-60px);
+  margin: 0 auto;
+}
+
+.design-text {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0;
+  transform: translateY(-80px);
 }
