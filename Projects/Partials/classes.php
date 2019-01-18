@@ -96,11 +96,11 @@ class Project
     $btn_atrr ="href=\"{$link}\" target=\"_blank\"";
     if($this->name == "blockchain"){
       echo "  <div class=\"btns\">
-          <div class=\"btn hvr-bounce-to-bottom\" href=\"{$linkRepo}\">
+          <a class=\"btn hvr-bounce-to-bottom\" href=\"{$linkRepo}\" target=\"_blank\">
             View Repository
-          </div>
+          </a>
           <div class=\"btn hvr-bounce-to-bottom read-btn\">
-            Read More
+            Read Description
           </div>
 
         </div>
@@ -116,7 +116,7 @@ class Project
             View Repository
           </a>
           <div class=\"btn hvr-bounce-to-bottom read-btn\">
-            Read More
+            Read Description
           </div>
           <a class=\"btn hvr-bounce-to-bottom gallery-btn\"   >
             {$btn_text}
@@ -134,7 +134,7 @@ class Project
           View Repository
         </div>
         <div class=\"btn hvr-bounce-to-bottom read-btn\">
-          Read More
+          Read Description
         </div>
         <a class=\"btn hvr-bounce-to-bottom gallery-btn\" {$btn_atrr}  >
           {$btn_text}

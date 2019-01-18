@@ -69,6 +69,21 @@ array_push($objects, new Project("youtubesync",
                                 ));
 
 
+
+//Creating Arabic Name Generator Object
+
+array_push($objects, new Project("blockchain",
+                                  "Simple Blockchain Implementation Using Node Js",
+                                  "Node js - Express - Electron - Socket IO - Elliptic",
+                                  "#079DD4",
+                                  "../assets/projects/bc.svg",
+                                  false,
+                                  "null",
+                                  "https://github.com/Ibrahimrahhal/BlockChain-App",
+                                  "shit",
+                                  null
+                                ));
+
 //Creating BusinessHash Object
 
 
