@@ -27,6 +27,8 @@ if( isset($_GET["project"]) ) {
 
 
  ?>
+ <link rel="icon" type="image/x-icon" href="../favico.ico">
+
 <head>
   <meta charset="utf-8">
   <title>
@@ -35,10 +37,9 @@ echo  $GLOBALS["objectx"]->mainTitle;
  ?>
 
   </title>
-  <link rel="stylesheet" href="project.css">
-  <link rel="stylesheet" href="../scrollbar.css">
-  <link rel="stylesheet" href="gallery/Swiper.css">
   <link rel="stylesheet" href="gallery/default_skin/default_skin.css">
+  <link rel="stylesheet" href="Gulped.css">
+
   <link href="https://fonts.googleapis.com/css?family=Arvo|Cabin:400,500|Raleway" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
