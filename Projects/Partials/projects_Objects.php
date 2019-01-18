@@ -29,6 +29,7 @@ array_push($objects, new Project("arabiandevs",
                                   "../assets/projects/ad.svg",
                                   true,
                                   "https://arabiandevs.com",
+                                  "https://github.com/Ibrahimrahhal/ArabianDevs.com",
                                   "shit",
                                   null
                                 ));
@@ -44,6 +45,7 @@ array_push($objects, new Project("arabicnamegenerator",
                                   "../assets/projects/ang.svg",
                                   true,
                                   "https://ibrahimrahhal.github.io/AANG_Deploy/",
+                                  "https://github.com/Ibrahimrahhal/Arabic_name_Generator_Front_End",
                                   "shit",
                                   null
                                 ));
@@ -61,6 +63,7 @@ array_push($objects, new Project("youtubesync",
                                   "../assets/projects/sync.svg",
                                   true,
                                   "https://syncyt.herokuapp.com/",
+                                  "https://github.com/Ibrahimrahhal/Synchronous_Youtube_player",
                                   "shit",
                                   null
                                 ));
@@ -111,6 +114,7 @@ array_push($objects, new Project("businesshash",
                                   "../assets/projects/bh.svg",
                                   false,
                                   "null",
+                                  "https://github.com/Ibrahimrahhal/Businesshash.com",
                                   "shit",
                                   $bg_items
                                 ));
@@ -122,54 +126,30 @@ array_push($objects, new Project("businesshash",
 
 
 
-//Creating BusinessHash Object
+// Creating Http Client Object
 
-//
-// $bg_items = "
-//
-// [  {
-//          src: 'gallery/bg/0.png',
-//          w: 1280,
-//          h: 1024
-//      },
-//      {
-//               src: 'gallery/bg/1.png',
-//               w: 1280,
-//               h: 1024
-//           },
-//           {
-//                    src: 'gallery/bg/2.png',
-//                    w: 1280,
-//                    h: 1024
-//                },
-//                {
-//                         src: 'gallery/bg/3.png',
-//                         w: 1280,
-//                         h: 1024
-//                     },
-//                     {
-//                              src: 'gallery/bg/4.png',
-//                              w: 1280,
-//                              h: 1024
-//                          },
-//                          {
-//                                   src: 'gallery/bg/5.png',
-//                                   w: 1280,
-//                                   h: 1024
-//                               }
-//  ]
-//
-// ";
-// array_push($objects, new Project("businesshash",
-//                                   "Business Hash Website",
-//                                   "php - jquery - typetype js - jquery ui - css - html",
-//                                   "#da1f26",
-//                                   "../assets/projects/bh.svg",
-//                                   false,
-//                                   "null",
-//                                   "shit",
-//                                   $bg_items
-//                                 ));
+
+$hc_items = "
+
+[  {
+         src: 'gallery/hc/0.png',
+         w: 1654,
+         h: 1128
+     }
+ ]
+
+";
+array_push($objects, new Project("http",
+                                  "Native Desktop http Client",
+                                  "Electron - Node js - Angular - Typescript - css - html",
+                                  "#FFD700",
+                                  "../assets/projects/http.svg",
+                                  false,
+                                  "null",
+                                  "https://github.com/Ibrahimrahhal/GUI_HTTP_C",
+                                  "shit",
+                                  $hc_items
+                                ));
 
 // $objects[0]->renderProject();
 

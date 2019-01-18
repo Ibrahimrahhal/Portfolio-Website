@@ -47,6 +47,7 @@ class Project
      $imgSrc,
      $live,
      $link,
+     $linkRepo,
      $text,
      $sliderArray
     )
@@ -58,6 +59,7 @@ class Project
     $this->imgSrc=$imgSrc;
     $this->live=$live;
     $this->link=$link;
+    $this->linkRepo=$linkRepo;
     $this->text=$text;
     $this->sliderArray=$sliderArray;
   }
@@ -65,7 +67,7 @@ class Project
   {
     $this->renderHero($this->imgSrc ,$this->color);
     $this->renderTitles($this->mainTitle,$this->secTitle);
-    $this->renderBtns($this->live,$this->link,$this->text);
+    $this->renderBtns($this->live,$this->link,$this->linkRepo,$this->text);
 
 
   }
@@ -86,15 +88,15 @@ class Project
         <h4 class=\"techs\">{$second}</h4>";
   }
 
-  public function renderBtns($live,$link,$text)
+  public function renderBtns($live,$link,$linkRepo,$text)
 
 
   {
     $btn_text = 'View Live Copy';
     $btn_atrr ="href=\"{$link}\" target=\"_blank\"";
-    if($this->name == "blockchain"{
+    if($this->name == "blockchain"){
       echo "  <div class=\"btns\">
-          <div class=\"btn hvr-bounce-to-bottom\">
+          <div class=\"btn hvr-bounce-to-bottom\" href=\"{$linkRepo}\">
             View Repository
           </div>
           <div class=\"btn hvr-bounce-to-bottom read-btn\">
@@ -106,13 +108,13 @@ class Project
           {$text}
         </div>";
         return;
-    })
+    }
     if(!$live){
       $btn_text = 'View Gallery';
       echo "  <div class=\"btns\">
-          <div class=\"btn hvr-bounce-to-bottom\">
+          <a class=\"btn hvr-bounce-to-bottom\" href=\"{$linkRepo}\" target=\"_blank\" >
             View Repository
-          </div>
+          </a>
           <div class=\"btn hvr-bounce-to-bottom read-btn\">
             Read More
           </div>
@@ -128,7 +130,7 @@ class Project
 
 
     echo "  <div class=\"btns\">
-        <div class=\"btn hvr-bounce-to-bottom\">
+        <div class=\"btn hvr-bounce-to-bottom\" href=\"{$linkRepo}\">
           View Repository
         </div>
         <div class=\"btn hvr-bounce-to-bottom read-btn\">
