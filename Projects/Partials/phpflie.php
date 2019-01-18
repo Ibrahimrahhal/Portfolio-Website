@@ -1,5 +1,5 @@
 <?php
-public function renderHero($img ,$color)
+ function renderHero($img ,$color)
 {
 echo "<div class=\"hero\" style=\"background-color:{$color};\">
       <div class=\"img\" style=\"background-image:url('${img}')\">
@@ -10,13 +10,13 @@ echo "<div class=\"hero\" style=\"background-color:{$color};\">
 
 
 
-public function renderTitles($first,$second)
+ function renderTitles($first,$second)
 {
   echo "    <h2 class=\"proj-name\">{$first}</h2>
       <h4 class=\"techs\">{$second}</h4>";
 };
 
-public function renderBtns($live,$link,$text)
+ function renderBtns($live,$link,$text)
 
 
 {
@@ -43,7 +43,7 @@ public function renderBtns($live,$link,$text)
     </div>";
 }
 
-public function renderSlider()
+ function renderSlider()
 {
   echo "
       <!-- Root element of PhotoSwipe. Must have class pswp. -->
@@ -109,10 +109,10 @@ public function renderSlider()
 
           </div>
 
-      </div>"
+      </div>";
 }
 
-public function renderSliderScript($obj)
+ function renderSliderScript($obj)
 {
 echo "  $(\".gallery-btn\").click(()=>{
 

@@ -1,9 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<?php
+require 'projects_Objects.php';
+require 'phpflie.php';
 
+if( $_GET["project"] ) {
+    $objects = $GLOBALS["objectArray"];
+     $name =  $_GET["project"] ;
+     foreach ($objects as $object) {
+       if($object->name == $name){
+         $GLOBALS["object"] = $object;
+       }
+     }
+     if($GLOBALS["object"]){} else {exit();}
+  } else {exit();}
+
+
+
+
+ ?>
 <head>
   <meta charset="utf-8">
-  <title>Fake Name Generator</title>
+  <title>
+<?php
+echo  $GLOBALS["object"]->mainTitle;
+ ?>
+
+  </title>
   <link rel="stylesheet" href="project.css">
   <link rel="stylesheet" href="../scrollbar.css">
   <link rel="stylesheet" href="../gallery/index.css">
@@ -18,9 +42,24 @@
   <div id="particles-js">
   </div>
   <div class="all">
-
+    <?php
+    $GLOBALS["object"]->renderProject();
+     ?>
   </div>
 
+
+  <?php
+  $object = $GLOBALS["object"];
+
+if(!($object->live)){
+
+  $object->renderSlider();
+
+
+}
+
+
+   ?>
 
 
 
@@ -32,7 +71,18 @@
       $(".desc").addClass("desc-active");
       $(".read-btn").addClass("btn-deactive");
       $(".read-btn").removeClass("hvr-bounce-to-bottom");
+      <?php
+      $object = $GLOBALS["object"];
 
+    if(!($object->live)){
+
+    $object->renderSliderScript();
+
+
+    }
+
+
+       ?>
 
 
     });

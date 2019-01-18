@@ -68,19 +68,110 @@ array_push($objects, new Project("youtubesync",
 
 //Creating BusinessHash Object
 
-array_push($objects, new Project("youtubesync",
-                                  "Synchronous Realtime Youtube Player",
-                                  "Node js - Express - Socket IO - Youtube Player API - css - html",
+
+$bg_items = "
+
+[  {
+         src: 'gallery/bh/0.png',
+         w: 1280,
+         h: 1024
+     },
+     {
+              src: 'gallery/bh/1.png',
+              w: 1280,
+              h: 1024
+          },
+          {
+                   src: 'gallery/bh/2.png',
+                   w: 1280,
+                   h: 1024
+               },
+               {
+                        src: 'gallery/bh/3.png',
+                        w: 1280,
+                        h: 1024
+                    },
+                    {
+                             src: 'gallery/bh/4.png',
+                             w: 1280,
+                             h: 1024
+                         },
+                         {
+                                  src: 'gallery/bh/5.png',
+                                  w: 1280,
+                                  h: 1024
+                              }
+ ]
+
+";
+array_push($objects, new Project("businesshash",
+                                  "Business Hash Website",
+                                  "php - jquery - typetype js - jquery ui - css - html",
                                   "#da1f26",
-                                  "../assets/projects/sync.svg",
-                                  true,
-                                  "https://syncyt.herokuapp.com/",
+                                  "../assets/projects/bh.svg",
+                                  false,
+                                  "null",
                                   "shit",
-                                  null
+                                  $bg_items
                                 ));
 
 
-$objects[0]->renderProject();
+
+
+
+
+
+
+//Creating BusinessHash Object
+
+//
+// $bg_items = "
+//
+// [  {
+//          src: 'gallery/bg/0.png',
+//          w: 1280,
+//          h: 1024
+//      },
+//      {
+//               src: 'gallery/bg/1.png',
+//               w: 1280,
+//               h: 1024
+//           },
+//           {
+//                    src: 'gallery/bg/2.png',
+//                    w: 1280,
+//                    h: 1024
+//                },
+//                {
+//                         src: 'gallery/bg/3.png',
+//                         w: 1280,
+//                         h: 1024
+//                     },
+//                     {
+//                              src: 'gallery/bg/4.png',
+//                              w: 1280,
+//                              h: 1024
+//                          },
+//                          {
+//                                   src: 'gallery/bg/5.png',
+//                                   w: 1280,
+//                                   h: 1024
+//                               }
+//  ]
+//
+// ";
+// array_push($objects, new Project("businesshash",
+//                                   "Business Hash Website",
+//                                   "php - jquery - typetype js - jquery ui - css - html",
+//                                   "#da1f26",
+//                                   "../assets/projects/bh.svg",
+//                                   false,
+//                                   "null",
+//                                   "shit",
+//                                   $bg_items
+//                                 ));
+
+// $objects[0]->renderProject();
 
 
 
@@ -88,6 +179,5 @@ $objects[0]->renderProject();
 
 
 
-
-
+$GLOBALS["objectArray"]=$objects;
  ?>
