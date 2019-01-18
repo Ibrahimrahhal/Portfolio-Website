@@ -92,6 +92,21 @@ class Project
   {
     $btn_text = 'View Live Copy';
     $btn_atrr ="href=\"{$link}\" target=\"_blank\"";
+    if($this->name == "blockchain"{
+      echo "  <div class=\"btns\">
+          <div class=\"btn hvr-bounce-to-bottom\">
+            View Repository
+          </div>
+          <div class=\"btn hvr-bounce-to-bottom read-btn\">
+            Read More
+          </div>
+
+        </div>
+        <div class=\"desc\">
+          {$text}
+        </div>";
+        return;
+    })
     if(!$live){
       $btn_text = 'View Gallery';
       echo "  <div class=\"btns\">
