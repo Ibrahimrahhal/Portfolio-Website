@@ -77,6 +77,7 @@ if(!($object->live)){
   <script src="gallery/Swiper.js"></script>
   <script type="text/javascript">
     $(".read-btn").click(() => {
+      $(".desc").removeClass("desc-deactive");
       $(".desc").addClass("desc-active");
       $(".read-btn").addClass("btn-deactive");
       $(".read-btn").removeClass("hvr-bounce-to-bottom");

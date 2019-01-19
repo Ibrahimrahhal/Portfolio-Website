@@ -104,7 +104,7 @@ class Project
           </div>
 
         </div>
-        <div class=\"desc\">
+        <div class=\"desc desc-deactive\">
           {$text}
         </div>";
         return;
@@ -122,7 +122,7 @@ class Project
             {$btn_text}
           </a>
         </div>
-        <div class=\"desc\">
+        <div class=\"desc desc-deactive\">
           {$text}
         </div>";
         return;
@@ -140,7 +140,7 @@ class Project
           {$btn_text}
         </a>
       </div>
-      <div class=\"desc\">
+      <div class=\"desc desc-deactive\">
         {$text}
       </div>";
   }
