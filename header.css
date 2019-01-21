@@ -47,11 +47,12 @@
   nav:hover .nav {
     height: 350px;
     padding-top: 20px;
+    border: 2px #121212 solid;
   }
 
   .nav {
     transform: translateY(-10px);
-    width: 200px;
+    width: 160px;
     height: 0;
     overflow: hidden;
     background-color: #121212;
@@ -62,7 +63,7 @@
     z-index: 1;
     box-sizing: border-box;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-    border: 2px #121212 solid;
+    border: 2px transparent solid;
   }
 
   .nav-cont {

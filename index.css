@@ -1,225 +1,233 @@
 html {
-scroll-behavior: smooth;
-
+  scroll-behavior: smooth;
 }
 
-
-body{
-padding: 0;
-margin: 0;
-
-
+body {
+  padding: 0;
+  margin: 0;
 }
-.no_support{
-  height:100vh;
+
+.no_support {
+  height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
   font-family: "Open Sans";
   font-size: 1rem;
   display: none;
-  position:absolute;
+  position: absolute;
   z-index: 100;
   text-align: center;
   padding: 0 20px;
   box-sizing: border-box;
 }
-.everything{
 
+.everything {
   position: relative;
   z-index: 100;
 }
+
 canvas {
   display: block;
   vertical-align: bottom;
 }
-.first-page{
+
+.first-page {
   width: 100%;
   height: 100vh;
-  position:relative;
-  z-index:11;
+  position: relative;
+  z-index: 11;
 }
 
-#particles-js{
-
-  height:100%; width:100%; position:fixed; z-index:-100;
-}
-.full-page-hero{
-height: 90%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-
-}
-.project-callToAction{
-width: 400px;
-padding: 20px;
-padding-bottom: 50px;
-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
-background-color: #121212;
-margin: 0 auto;
-/* border-radius: 5px; */
-}
-
-.hr-2px{
-height: 3px;
-width: 600px;
-background-color: #121212;
-margin: 0 auto;
-margin-top: 40px;
-border-radius: 50px;
-
-}
-h1,h3{
-  text-align: center;
-}
-.main-h1{
-font-family: Cabin;
-
-
-}
-.main-h1 span{
-font-weight: 400;
-
-}
-.main-h3{
-  font-family: arvo;
-  margin: 0;
-}
-.circle{
-height: 125px;
-width: 125px;
-border-radius:50%;
-border: 4px #121212 solid;
-margin :0 auto;
-}
-
-.project-text{
-font-family: "Raleway";
-font-weight:400;
-text-align: center;
-color:#ffffff;
-}
-.project-text span {
-font-family: "Raleway";
-font-weight: 500;
-}
-
-.project-btn, .project-btn:link, .project-btn:active, .project-btn:visited{
-width: 150px;
-height: 40px;
-font-family: Raleway;
-text-decoration: none;
-background: #121212;
-color: #ffffff;
-border: 1px solid #ffffff;
-border-radius: 3px;
-display: flex!important;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-margin: 0 auto;
-
-}
-
-
-.thing-im-good-at{
-color: #121212;
-text-align: center;
-font-family: 'Open Sans';
-margin-bottom: 20px;
-font-size: 2.5rem;
-font-weight: 300;
-
-}
-.designer{
-
-  margin-top: 90px;
-
-}
-.education_sm{
-display: none;
-
-}
-
-/* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// */
-/* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// */
-.skill-wrapper{
-padding: 35px 0;
-width: 100%;
-
-
-}
-.skill-set{
-
-  background: linear-gradient(to bottom, #f2f2f2 0%,#ffffff 71%);
-  height: 400px;
+#particles-js {
+  height: 100%;
   width: 100%;
-  transform: translateY(-40px);
-  position: relative;z-index: -5;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  align-items:center;
+  position: fixed;
+  z-index: -100;
+}
+
+.full-page-hero {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
-
-
-
-.skill-h2{
-text-align: center;
-font-family: Cabin;
-color:#ffffff;
-font-weight: 400;
-background-color: #121212;
-padding: 20px 0 35px 0;
-/* mobile */
-/* clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 80%, 50% 100%, 40% 80%, 0 80%); */
-clip-path: polygon(0 0, 100% 0, 100% 80%, 55% 80%, 50% 100%, 45% 80%, 0 80%);
+.project-callToAction {
+  width: 400px;
+  padding: 20px;
+  padding-bottom: 50px;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  background-color: #121212;
+  margin: 0 auto;
+  transition: translateY(-1px);
 }
 
-.skill-h2 span{
-font-weight: 600;
-
+.hr-2px {
+  height: 3px;
+  width: 600px;
+  background-color: #121212;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 50px;
 }
+
+h1, h3 {
+  text-align: center;
+}
+
+.main-h1 {
+  font-family: Cabin;
+}
+
+.main-h1 span {
+  font-weight: 400;
+}
+
+.main-h3 {
+  font-family: arvo;
+  margin: 0;
+}
+
+.circle {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  border: 4px #121212 solid;
+  margin: 0 auto;
+}
+
+.project-text {
+  font-family: "Raleway";
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.project-text span {
+  font-family: "Raleway";
+  font-weight: 500;
+}
+
+.project-btn, .project-btn:link, .project-btn:active, .project-btn:visited {
+  width: 150px;
+  height: 40px;
+  font-family: Raleway;
+  text-decoration: none;
+  background: #121212;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.thing-im-good-at {
+  color: #121212;
+  text-align: center;
+  font-family: 'Open Sans';
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.designer {
+  margin-top: 90px;
+}
+
+.education_sm {
+  display: none;
+}
+
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+.skill-wrapper {
+  padding: 35px 0;
+  width: 100%;
+}
+
+.skill-set {
+  background: linear-gradient(to bottom, #f2f2f2 0%, #ffffff 71%);
+  height: 400px;
+  width: 100%;
+  transform: translateY(-40px);
+  position: relative;
+  z-index: -5;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-h2 {
+  text-align: center;
+  font-family: Cabin;
+  color: #ffffff;
+  font-weight: 400;
+  background-color: #121212;
+  padding: 20px 0 35px 0;
+  /* mobile */
+  /* clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 80%, 50% 100%, 40% 80%, 0 80%); */
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 55% 80%, 50% 100%, 45% 80%, 0 80%);
+}
+
+.skill-h2 span {
+  font-weight: 600;
+}
+
 .skill-h3 {
   text-align: center;
   font-family: "Open Sans";
-  color:#ffffff;
+  color: #ffffff;
   font-weight: 400;
-
 }
 
 /* ////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// *//* ////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////// */
-
-
-
-
-
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
 .project-btn-hover {
   display: inline-block;
   vertical-align: middle;
@@ -232,6 +240,7 @@ font-weight: 600;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
+
 .project-btn-hover:before {
   content: "";
   position: absolute;
@@ -252,9 +261,11 @@ font-weight: 600;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .project-btn-hover:hover, .project-btn-hover:focus, .project-btn-hover:active {
   color: #121212;
 }
+
 .project-btn-hover:hover:before, .project-btn-hover:focus:before, .project-btn-hover:active:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
