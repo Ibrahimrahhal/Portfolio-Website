@@ -25,6 +25,7 @@
     "gulp-cli": "^2.0.1",
     "gulp-cssimport": "^7.0.0",
     "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4",
     "joi-browser": "^13.4.0",
     "lodash": "^4.17.11"
   }

@@ -61,7 +61,7 @@ canvas {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
   background-color: #121212;
   margin: 0 auto;
-  transition: translateY(-1px);
+  transform: translateY(-1px);
 }
 
 .hr-2px {
