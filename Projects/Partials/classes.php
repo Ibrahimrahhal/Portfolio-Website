@@ -130,13 +130,13 @@ class Project
 
 
     echo "  <div class=\"btns\">
-        <div class=\"btn hvr-bounce-to-bottom\" href=\"{$linkRepo}\">
+        <a class=\"btn hvr-bounce-to-bottom\" href=\"{$linkRepo}\">
           View Repository
-        </div>
+        </a>
         <div class=\"btn hvr-bounce-to-bottom read-btn\">
           Read Description
         </div>
-        <a class=\"btn hvr-bounce-to-bottom gallery-btn\" {$btn_atrr}  >
+        <a class=\"btn hvr-bounce-to-bottom gallery-btn\" {$btn_atrr} target=\"_blank\"  >
           {$btn_text}
         </a>
       </div>
