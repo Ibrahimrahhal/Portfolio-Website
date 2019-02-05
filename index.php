@@ -482,19 +482,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="jquery_script.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script>
-    var ip = "";
-    axios('http://ip-api.com/json/').then((Data) => {
-      data = Data.data;
-      console.log(data);
-      // data = JSON.parse()
-      ip = "" + data.country + "_" + data.isp + "_" + "_lat_" + data.lat + "_lon_" + data.lon +
-        "_zip_" + data.zip + "_ip_" + data.query;
-      axios('https://ibrahimrahhal.herokuapp.com/?ip=' + ip).then((data) => {});
-
-
-    });
-  </script>
+<?php include "entryEmail.php"; ?>
 
 
 </body>

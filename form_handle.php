@@ -81,6 +81,6 @@ Your Screen Size is Not Suppoted
 
 
     </script>
-
+<?php include 'entryEmail.php'; ?>
   </body>
 </html>

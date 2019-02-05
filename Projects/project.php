@@ -100,6 +100,7 @@ if(!($object->live)){
 
 
   </script>
+  <?php include "../entryEmail.php"; ?>
 </body>
 
 </html>
