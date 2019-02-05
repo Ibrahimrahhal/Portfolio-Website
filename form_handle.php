@@ -81,6 +81,7 @@ Your Screen Size is Not Suppoted
 
 
     </script>
-<?php include 'entryEmail.php'; ?>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <?php echo  (include 'entryEmail.php'); ?>
   </body>
 </html>

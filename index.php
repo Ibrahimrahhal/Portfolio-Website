@@ -281,11 +281,7 @@
       <h3 class="skill-title"></h3>
 
     </div> -->
-    <!-- <?php
-    require 'skill_render.php';
-    echo renderall($myskills);
-
-     ?> -->
+    <!--  -->
 
 
 

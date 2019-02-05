@@ -20,7 +20,7 @@ function getRealIpAddr()
 echo getRealIpAddr();
  ?>';
  var link = "http://api.ipstack.com/"+ip+"?access_key=f085c49c37ff1058a10ac797bbb3086d"
-axios('http://api.ipstack.com/134.201.250.155?access_key=f085c49c37ff1058a10ac797bbb3086d').then((Data) => {
+axios(link).then((Data) => {
   data = Data.data;
   console.log(data);
   // data = JSON.parse()
