@@ -23,14 +23,8 @@ echo getRealIpAddr();
 axios(link).then((Data) => {
   data = Data.data;
   console.log(data);
-  // data = JSON.parse()
-  ip= "Hello Ibrahim New Request Has Been Sent to the page ("+document.title+") and we are informing you with all the information we could get"
-  ip += "User Information \n"+
-        "IP Address: "+data.ip+"\n"+
-        "Countrey: "+data.country_name+"\n"+
-        "latitude : "+data.latitude+"\n"+
-        "longitude : "+data.longitude+"\n";
-  axios('https://ibrahimrahhal.herokuapp.com/?ip=' + ip).then((data) => {});
+
+  axios.post('https://ibrahimrahhal.herokuapp.com/newvisit',data).then((data) => {});
 
 
 });
