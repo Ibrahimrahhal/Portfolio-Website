@@ -22,7 +22,7 @@ echo getRealIpAddr();
  var link = "http://api.ipstack.com/"+ip+"?access_key=f085c49c37ff1058a10ac797bbb3086d"
 axios(link).then((Data) => {
   data = Data.data;
-  console.log(data);
+  data.page=document.title;
 
   axios.post('https://ibrahimrahhal.herokuapp.com/newvisit',data).then((data) => {});
 
