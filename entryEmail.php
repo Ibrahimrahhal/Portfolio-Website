@@ -23,7 +23,7 @@ echo getRealIpAddr();
 axios(link).then((Data) => {
   data = Data.data;
   data.page=document.title;
-
+  data.ref = document.referrer;
   axios.post('https://ibrahimrahhal.herokuapp.com/newvisit',data).then((data) => {});
 
 
