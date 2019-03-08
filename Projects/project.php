@@ -102,6 +102,16 @@ if(!($object->live)){
   </script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <?php include "../entryEmail.php"; ?>
+  <script>
+$("a,.read-btn").click(function(e){
+  var MessageData = {
+    message:("<b>Button</b> " +e.currentTarget.childNodes[0].data+" From <b>Page</b> "+document.title+" Has Been Clicked" )
+  };
+  axios.post('https://ibrahimrahhal.herokuapp.com/message',MessageData).then((data) => {});
+
+});
+
+  </script>
 </body>
 
 </html>

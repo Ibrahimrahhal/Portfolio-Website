@@ -90,12 +90,46 @@ h1, h3 {
   margin: 0;
 }
 
+@keyframes logo {
+  0% {
+    transform: scale(1) rotate(0deg);
+    border-radius: 50%;
+  }
+
+  25% {
+    transform: scale(1.1)rotate(180deg);
+    border-radius: 50%;
+  }
+
+  40% {
+    transform: scale(0.9);
+    border-radius: 20%;
+  }
+
+  80% {
+    transform: scale(1.1) rotate(40deg);
+    border-radius: 60%;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+    border-radius: 50%;
+  }
+}
+
 .circle {
   height: 125px;
   width: 125px;
   border-radius: 50%;
   border: 4px #121212 solid;
   margin: 0 auto;
+  /* animation-name: logo;
+  animation-fill-mode: both;
+  animation-duration: 1.5s;
+  animation-iteration-count: 3;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate; */
 }
 
 .project-text {

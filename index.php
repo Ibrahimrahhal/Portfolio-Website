@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="favico.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <meta charset="utf-8">
   <title>Ibrahim A. Rahhal</title>
 </head>
@@ -28,6 +29,7 @@
       <nav>
         <div class="logo">
           Ibrahim Rahhal
+          <div><div></div></div>
         </div>
         <div class="nav-cont">
           <div class="nav">
@@ -55,6 +57,7 @@
         <div class="circle">
 
         </div>
+
         <h1 class="main-h1">Designer,<span> Fullstack Developer and Student</span></h1>
         <h3 class="main-h3">Welcome to My Website</h3>
         <div class="hr-2px">
@@ -268,6 +271,9 @@
           </div>
 
         </div>
+        <div></div>
+        <div class="whiteBox"></div>
+
       </div>
     </div>
 
@@ -479,7 +485,15 @@
   <script src="jquery_script.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <?php include "entryEmail.php"; ?>
+<script>
+$("a,.nav-link").click(function(e){
+  var MessageData = {
+    message:("<b>Button</b> " +e.currentTarget.childNodes[0].data+" From <b>Page</b> "+document.title+" Has Been Clicked" )
+  };
+  axios.post('https://ibrahimrahhal.herokuapp.com/message',MessageData).then((data) => {});
 
+});
+</script>
 
 </body>
 

@@ -14,6 +14,20 @@
   transform: scale(1.5);
 }
 
+nav .logo div div {
+  background-image: url('./arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 8px;
+  padding: 0;
+}
+
+nav .logo div {
+  padding: 8px 0 8px 0;
+  transition: all 0.2s;
+}
+
 @media screen and (min-width:768px) {
   header {
     display: flex;
@@ -42,6 +56,10 @@
     color: #121212;
     border: solid 1px #121212;
     border-radius: 0px;
+  }
+
+  nav:hover .logo div {
+    opacity: 0;
   }
 
   nav:hover .nav {
@@ -94,7 +112,7 @@
     border-radius: 0 0 30px 30px;
     font-family: Raleway;
     padding: 15px 15px;
-    padding-left: 12px;
+    padding-bottom: 7px;
     color: #ffffff;
     background-color: #121212;
     user-select: none;
