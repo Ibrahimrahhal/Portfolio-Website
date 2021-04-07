@@ -27,6 +27,6 @@
     "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "^2.6.4",
     "joi-browser": "^13.4.0",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.19"
   }
 }
