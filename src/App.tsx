@@ -1,25 +1,22 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import Particles from "react-particles-js";
+import RootRouter from "./routers";
+import ParticleConfig from "./particle.config.json";
+import "./base.scss";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="site-wrapper">
+        <Particles
+          className="site-wrapper__background particles-js"
+          params={ParticleConfig as any}
+        />
+        <div className="site-wrapper__content">
+          <RootRouter />
+        </div>
+      </div>
+    </>
   );
 }
 
