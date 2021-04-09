@@ -3,12 +3,12 @@ import "./header.scss";
 
 export default (): ReactElement => {
   return (
-    <header>
+    <header className="header">
       <nav className="header__nav">
         <div className="header__logo">
           Ibrahim Rahhal
           <div>
-            <div></div>
+            <div />
           </div>
         </div>
         <div className="nav-menu">
@@ -33,13 +33,14 @@ export default (): ReactElement => {
               href="https://github.com/Ibrahimrahhal"
               className="nav-menu-list__item "
               target="_blank"
+              rel="noreferrer"
             >
-              <div className="github-icon"></div>
+              <div className="github-icon" />
             </a>
           </div>
         </div>
       </nav>
-      <a className="header__ contact" href="./form_handle.php?type=message">
+      <a className="header__contact" href="./form_handle.php?type=message">
         Get in Touch
       </a>
     </header>

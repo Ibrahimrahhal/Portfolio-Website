@@ -64,72 +64,72 @@
     }
 }
 .header {
-    @include media(">tablet") {
         display: flex;
-        height: 60px;
+        height: 3.75rem;
         justify-content: flex-end;
         align-items: center;
-        padding: 0 15px;
+        padding: 0 1rem;
         &__nav {
             position: fixed;
-            top: 0px;
-            left: 15px;
+            top: 0;
+            left: 1rem;
             transition: all 0.2s;
             z-index: 10;
+            @include media("<=tablet") {
+                left: 50vw;
+                transform: translateX(-50%);
+            }
             &:hover {
                 .header__logo {
                     transform: scale(1.01);
                     background-color: #ffffff;
                     color: #121212;
                     border: solid 1px #121212;
-                    border-radius: 0px;
+                    border-radius: 0;
                     div {
                         opacity: 0;
                     }
                 }
-                top: 10px;
+                top: 0.625rem;
             }
         }
-    }
 
     &__logo {
-        @include media('>tablet') {
-            transform: translateX(-5px);
-            border: solid 1px #ffffff;
-            border-top: solid 1px #121212;
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 171px;
-            border-radius: 0 0 30px 30px;
-            font-family: Raleway;
-            padding: 15px 15px;
-            padding-bottom: 7px;
-            color: #ffffff;
-            background-color: #121212;
-            user-select: none;
-            transition: all 0.3s;
-            position: relative;
-            z-index: 50;
-            cursor: pointer;
-            text-align: center;
-        }
+        transform: translateX(-5px);
+        border: solid 1px #ffffff;
+        border-top: solid 1px #121212;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 10.7rem;
+        border-radius: 0 0 2rem 2rem;
+        font-family: Raleway;
+        padding: 1rem;
+        padding-bottom: 0.5rem;
+        color: #ffffff;
+        background-color: #121212;
+        user-select: none;
+        transition: all 0.3s;
+        position: relative;
+        z-index: 50;
+        cursor: pointer;
+        text-align: center;
         div {
-            padding: 8px 0 8px 0;
+            padding: 0.5rem 0;
             transition: all 0.2s;
             div {
                 background-image: url('./../../public/img/arrow.svg');
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
-                height: 8px;
+                height: 0.5rem;
                 padding: 0;
             }
         }
     }
     &__github-icon {
         background-image: url("./../../public/img/github.svg");
-        height: 23px;
-        width: 33px;
+        height: 1.5rem;
+        width: 2rem;
         background-repeat: no-repeat;
         background-size: contain;
         opacity: 0.8;
@@ -141,64 +141,57 @@
         }
     }
     &__contact {
-        @include media('>tablet') {
-            font-family: Cabin;
-            text-decoration: none;
-            border: solid 3px #121212;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            color: #121212;
-            @include hvr-bounce-to-bottom;
+        font-family: Cabin;
+        text-decoration: none;
+        border: solid 3px #121212;
+        padding: 0.625rem 1rem;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        color: #121212;
+        @include hvr-bounce-to-bottom;
+        @include media("<=tablet") {
+            display: none;
         }
     }
 }
 
 .nav {
     &-menu {
-        @include media('<tablet') {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
+        width: 100%;
+        display: flex;
+        justify-content: center;
         &-list {
             .header__nav:hover & {
-                @include media('<tablet') {
-                    height: 350px;
-                    padding-top: 20px;
-                    border: 2px #121212 solid;
-                }
+                height: 21.75rem;
+                padding-top: 1.25rem;
+                border: 2px #121212 solid;
             }
             &__item {
-                @include media('<tablet') {
-                    width: 100%;
-                    box-sizing: border-box;
-                    padding: 20px 0;
-                    display: flex !important;
-                    align-items: center;
-                    justify-content: center;
-                    color: #ffffff;
-                    font-family: Raleway;
-                    text-decoration: none;
-                    @include hvr-underline-from-center;
-                }
+                width: 100%;
+                box-sizing: border-box;
+                padding: 1.25rem 0;
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                color: #ffffff;
+                font-family: Raleway;
+                text-decoration: none;
+                @include hvr-underline-from-center;
 
             }
-            @include media('<tablet') {
-                transform: translateY(-10px);
-                width: 160px;
-                height: 0;
-                overflow: hidden;
-                background-color: #121212;
-                transition: all 0.4s;
-                transition-delay: 0.2s;
-                transition-timing-function: ease-out;
-                position: relative;
-                z-index: 1;
-                box-sizing: border-box;
-                clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-                border: 2px transparent solid;
-            }
+            transform: translateY(-0.625rem);
+            width: 10rem;
+            height: 0;
+            overflow: hidden;
+            background-color: #121212;
+            transition: all 0.4s;
+            transition-delay: 0.2s;
+            transition-timing-function: ease-out;
+            position: relative;
+            z-index: 1;
+            box-sizing: border-box;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+            border: 2px transparent solid;
         }
     }
 }
