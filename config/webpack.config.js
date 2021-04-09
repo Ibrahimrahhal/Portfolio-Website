@@ -152,6 +152,12 @@ module.exports = function (webpackEnv) {
           options: {
             sourceMap: true,
           },
+        },
+        {
+          loader: 'inject-global-sass',
+          options: {
+            files: ["src/theming/theme.scss", "src/theming/util.scss"]
+          }
         }
       );
     }
