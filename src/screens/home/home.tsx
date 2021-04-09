@@ -1,5 +1,10 @@
 import React, { ReactElement } from "react";
+import Header from "../../components/header";
 
 export default (): ReactElement => {
-  return <h1>hi</h1>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
