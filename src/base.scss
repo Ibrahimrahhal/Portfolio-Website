@@ -22,5 +22,8 @@ html {
   &__content {
     position: relative;
     z-index: 100;
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
   }
 }
