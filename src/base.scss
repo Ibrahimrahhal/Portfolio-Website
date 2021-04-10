@@ -5,8 +5,24 @@ html {
   body {
     padding: 0;
     margin: 0;
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: map-get($theme, "secondary");
+    }
+    &::-webkit-scrollbar {
+      width: 0.625rem;
+      background-color: map-get($theme, "secondary");
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: map-get($theme, "primary");
+      border: 1px solid map-get($theme, "secondary");
+      border-top: 0;
+      border-bottom: 0;
+    }
   }
   scroll-behavior: smooth;
+  font-family: map-get($fonts, "primary"), sans-serif;
+
 }
 .site-wrapper {
   &__background {
