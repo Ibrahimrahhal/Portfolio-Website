@@ -58,7 +58,7 @@
     &:hover,
     &:focus,
     &:active {
-        &:hover {
+        &:before {
             left: 12%;
             right: 12%;
         }
