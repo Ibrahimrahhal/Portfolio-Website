@@ -156,7 +156,7 @@ module.exports = function (webpackEnv) {
         {
           loader: 'inject-global-sass',
           options: {
-            files: ["src/theming/theme.scss", "src/theming/util.scss"]
+            files: ["src/theming/theme.scss", "src/theming/util.scss", "src/theming/fonts.scss"]
           }
         }
       );
