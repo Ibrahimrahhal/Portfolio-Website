@@ -42,7 +42,7 @@
     "html-webpack-plugin": "4.5.0",
     "identity-obj-proxy": "3.0.0",
     "include-media": "^1.4.9",
-    "inject-global-sass": "^1.0.0-beta.1",
+    "inject-global-sass": "latest",
     "jest": "26.6.0",
     "jest-circus": "26.6.0",
     "jest-resolve": "26.6.0",
@@ -117,7 +117,8 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^1.7.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "webpack-cli": "^4.6.0"
   },
   "jest": {
     "roots": [
