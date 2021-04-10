@@ -52,7 +52,7 @@
             padding: 0.5rem 0;
             transition: all 0.2s;
             div {
-                background-image: url('./../../public/img/arrow.svg');
+                background-image: url('../../../public/img/arrow.svg');
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
@@ -62,7 +62,7 @@
         }
     }
     &__github-icon {
-        background-image: url("./../../public/img/github.svg");
+        background-image: url("../../../public/img/github.svg");
         height: 1.5rem;
         width: 2rem;
         background-repeat: no-repeat;
