@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react";
 import Header from "../../components/header/header";
 import Hero from "../../components/hero/hero";
+import Footer from "../../components/footer/footer";
 import Animation from "../../components/animation/animation";
 import "./home.scss";
 
@@ -21,6 +22,7 @@ export default (): ReactElement => {
           width={75}
         />
       </div>
+      <Footer />
     </>
   );
 };
