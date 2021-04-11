@@ -1,0 +1,5 @@
+.home {
+    &__scroll-indicator {
+        background-color: map-get($theme, "secondary");
+    }
+}
