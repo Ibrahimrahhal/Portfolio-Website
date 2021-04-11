@@ -60,6 +60,7 @@
     "react-app-polyfill": "^2.0.0",
     "react-dev-utils": "^11.0.3",
     "react-dom": "^17.0.2",
+    "react-lottie": "^1.2.3",
     "react-particles-js": "^3.4.1",
     "react-refresh": "^0.8.3",
     "react-router-dom": "^5.2.0",
@@ -106,6 +107,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-lottie": "^1.2.5",
     "@typescript-eslint/eslint-plugin": "^4.21.0",
     "@typescript-eslint/parser": "^4.21.0",
     "eslint": "^7.2.0",
@@ -180,5 +182,8 @@
       "react-app"
     ]
   },
-  "pre-commit": ["format", "lint"]
+  "pre-commit": [
+    "format",
+    "lint"
+  ]
 }
