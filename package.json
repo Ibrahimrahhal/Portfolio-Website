@@ -180,5 +180,5 @@
       "react-app"
     ]
   },
-  "pre-commit": "format"
+  "pre-commit": ["format", "lint"]
 }
