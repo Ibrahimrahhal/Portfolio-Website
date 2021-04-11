@@ -1,0 +1,42 @@
+.footer {
+    background-color: map-get($theme, "primary");
+    min-height: 15rem;
+    margin-top: 5rem;
+    padding: 2rem;
+    &__social-media {
+        &__title {
+            color: map-get($theme, "secondary");
+            text-align: center;
+        }
+        &__icon {
+            height: 3rem;
+            width: 3rem;
+            text-decoration: none;
+            color: map-get($theme, "secondary");
+            @include hvr-slide-from-up;
+            border: solid 1px rgba(map-get($theme, "secondary"), 0.6);
+            border-radius: 50%;
+            margin: 0 0.5rem;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            &s {
+                text-align: center;
+            }
+        }
+    }
+    &__logo {
+        text-align: center;
+        color: map-get($theme, "secondary");
+        opacity: 0.9;
+        &-img {
+            width: 6rem;
+            user-select: none;
+        }
+        &-title {
+            margin: 0.5rem 0 2.5rem 0;
+            font-family: map-get($fonts, "unique");
+        }
+    }
+}

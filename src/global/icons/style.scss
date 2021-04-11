@@ -25,7 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-github:before {
+.icon-spotify:before {
   content: "\e900";
-  color: #fff;
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-behance:before {
+  content: "\eaa8";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eaca";
 }
