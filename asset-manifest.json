@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.1edbf39a.chunk.css",
-    "main.js": "/static/js/main.cad4827e.chunk.js",
-    "main.js.map": "/static/js/main.cad4827e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.1541e26a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.1541e26a.js.map",
-    "static/js/2.866c1a94.chunk.js": "/static/js/2.866c1a94.chunk.js",
-    "static/js/2.866c1a94.chunk.js.map": "/static/js/2.866c1a94.chunk.js.map",
-    "static/js/3.9f7ad1e8.chunk.js": "/static/js/3.9f7ad1e8.chunk.js",
-    "static/js/3.9f7ad1e8.chunk.js.map": "/static/js/3.9f7ad1e8.chunk.js.map",
-    "static/js/4.26341327.chunk.js": "/static/js/4.26341327.chunk.js",
-    "static/js/4.26341327.chunk.js.map": "/static/js/4.26341327.chunk.js.map",
+    "main.css": "/static/css/main.c84c7f39.chunk.css",
+    "main.js": "/static/js/main.218b4309.chunk.js",
+    "main.js.map": "/static/js/main.218b4309.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.34869b3d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.34869b3d.js.map",
+    "static/js/2.00e3253e.chunk.js": "/static/js/2.00e3253e.chunk.js",
+    "static/js/2.00e3253e.chunk.js.map": "/static/js/2.00e3253e.chunk.js.map",
+    "static/js/3.151b473c.chunk.js": "/static/js/3.151b473c.chunk.js",
+    "static/js/3.151b473c.chunk.js.map": "/static/js/3.151b473c.chunk.js.map",
+    "static/js/4.8dd59d1d.chunk.js": "/static/js/4.8dd59d1d.chunk.js",
+    "static/js/4.8dd59d1d.chunk.js.map": "/static/js/4.8dd59d1d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.1edbf39a.chunk.css.map": "/static/css/main.1edbf39a.chunk.css.map",
-    "static/js/2.866c1a94.chunk.js.LICENSE.txt": "/static/js/2.866c1a94.chunk.js.LICENSE.txt",
-    "static/media/base.scss": "/static/media/icomoon.dce742a8.woff"
+    "static/css/main.c84c7f39.chunk.css.map": "/static/css/main.c84c7f39.chunk.css.map",
+    "static/js/2.00e3253e.chunk.js.LICENSE.txt": "/static/js/2.00e3253e.chunk.js.LICENSE.txt",
+    "static/media/base.scss": "/static/media/icomoon.ba471b9d.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.1541e26a.js",
-    "static/js/2.866c1a94.chunk.js",
-    "static/css/main.1edbf39a.chunk.css",
-    "static/js/main.cad4827e.chunk.js"
+    "static/js/runtime-main.34869b3d.js",
+    "static/js/2.00e3253e.chunk.js",
+    "static/css/main.c84c7f39.chunk.css",
+    "static/js/main.218b4309.chunk.js"
   ]
 }
