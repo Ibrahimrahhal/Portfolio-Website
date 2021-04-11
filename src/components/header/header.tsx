@@ -5,12 +5,7 @@ export default (): ReactElement => {
   return (
     <header className="header">
       <nav className="header__nav">
-        <div className="header__logo">
-          Ibrahim Rahhal
-          <div>
-            <div />
-          </div>
-        </div>
+        <div className="header__logo">Ibrahim Rahhal</div>
         <div className="nav-menu">
           <div className="nav-menu-list">
             <a href="#skill" className="nav-menu-list__item">
@@ -35,7 +30,11 @@ export default (): ReactElement => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="github-icon" />
+              <i
+                aria-hidden="true"
+                title="Github account"
+                className="icon-github"
+              />
             </a>
           </div>
         </div>
