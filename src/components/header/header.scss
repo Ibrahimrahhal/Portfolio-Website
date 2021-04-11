@@ -47,33 +47,8 @@
         z-index: 50;
         cursor: pointer;
         text-align: center;
-        div {
-            padding: 0.5rem 0;
-            transition: all 0.2s;
-            div {
-                background-image: url('../../../public/img/arrow.svg');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-                height: 0.5rem;
-                padding: 0;
-            }
-        }
     }
-    &__github-icon {
-        background-image: url("../../../public/img/github.svg");
-        height: 1.5rem;
-        width: 2rem;
-        background-repeat: no-repeat;
-        background-size: contain;
-        opacity: 0.8;
-        background-position: center;
-        transition: all 0.4s ease-out;
-        &:hover {
-            opacity: 1;
-            transform: scale(1.5);
-        }
-    }
+
     &__contact {
         font-family: map-get($fonts, "secondary");
         text-decoration: none;
