@@ -39,7 +39,6 @@
         border-radius: 0 0 2rem 2rem;
         font-family: map-get($fonts, "primary");
         padding: 1rem;
-        padding-bottom: 0.5rem;
         color: map-get($theme, "secondary");
         background-color: map-get($theme, "primary");
         user-select: none;
@@ -111,7 +110,17 @@
                 color: map-get($theme, "secondary");
                 font-family: map-get($fonts, "primary");
                 text-decoration: none;
+                transition: all 0.3s ease-out;
                 @include hvr-underline-from-center;
+                &:last-child {
+                    font-size: 1.5rem;
+                    &:hover {
+                        transform: scale(1.2);
+                        &:before {
+                            display: none;
+                        } 
+                    }
+                }
             }
             
 
