@@ -47,6 +47,7 @@ export default () => {
               <a
                 title={icon.title}
                 href={icon.link}
+                key={icon.title}
                 target="_blank"
                 className="footer__social-media__icon"
               >
