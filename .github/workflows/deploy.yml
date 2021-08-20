@@ -1,8 +1,9 @@
 name: Deploy
+
 on:
   push:
     branches: [ main ]
-    
+
 jobs:
   run:
     runs-on: ubuntu-latest
