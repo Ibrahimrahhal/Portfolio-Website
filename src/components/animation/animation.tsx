@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { ReactElement, Suspense, lazy } from "react";
 import Lottie from "react-lottie";
 import "./animation.scss";
