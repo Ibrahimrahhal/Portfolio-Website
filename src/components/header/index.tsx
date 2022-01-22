@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import "./header.scss";
+import "@components/header/index.scss";
 
 export default (): ReactElement => {
   return (

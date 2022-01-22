@@ -1,11 +1,11 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { ReactElement, Suspense, lazy } from "react";
-import Lottie from "react-lottie";
-import "./animation.scss";
+import { AnimatedSVG } from "@core";
+import "@components/animation/index.scss";
 
 const Animation = (props: any): ReactElement => {
-  return <Lottie {...props} />;
+  return <AnimatedSVG {...props} />;
 };
 
 export default (props: any) => {

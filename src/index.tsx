@@ -1,11 +1,17 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
+import { I18nProvider } from "@core";
+import i18n from "@services/i18n";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Suspense fallback="loading">
+      <I18nProvider i18n={i18n}>
+        <App />
+      </I18nProvider>
+    </Suspense>
   </React.StrictMode>,
   document.getElementById("root")
 );

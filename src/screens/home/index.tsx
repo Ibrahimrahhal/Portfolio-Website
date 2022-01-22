@@ -1,9 +1,9 @@
 import React, { ReactElement } from "react";
-import Header from "../../components/header/header";
-import Hero from "../../components/hero/hero";
-import Footer from "../../components/footer/footer";
-import Animation from "../../components/animation/animation";
-import "./home.scss";
+import Header from "@components/header";
+import Hero from "@components/hero";
+import Footer from "@components/footer";
+import Animation from "@components/animation";
+import "@screens/home/index.scss";
 
 const animationOptions = {
   loop: true,

@@ -18,9 +18,34 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "@core": ["src/core/index.ts"],
+  
+      "@components/*": ["src/components/*"],
+      "@components": ["src/components"],
+  
+      "@configs/*": ["src/configs/*"],
+      "@configs": ["src/configs"],
+  
+      "@services/*": ["src/services/*"],
+      "@services": ["src/services"],
+  
+      "@routers/*": ["src/routers/*"],
+      "@routers": ["src/routers"],
+  
+      "@screens/*": ["src/screens/*"],
+      "@screens": ["src/screens"],
+      
+      "@themes/*": ["src/theming/*"],
+      "@themes": ["src/theming"],
+  
+      "@globals/*": ["src/global/*"],
+      "@globals": ["src/global"],
+    }
   },
   "include": [
-    "src"
+    "./src/**/*"
   ]
 }

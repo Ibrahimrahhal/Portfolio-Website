@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import "./hero.scss";
+import "@components/hero/index.scss";
 
 export default (): ReactElement => {
   return (

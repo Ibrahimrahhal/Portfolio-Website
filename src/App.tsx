@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
-import Particles from "react-particles-js";
-import RootRouter from "./routers";
-import ParticleConfig from "./particle.config.json";
+import { Particles } from "@core";
+import RootRouter from "@routers";
+import ParticleConfig from "@configs/particle.config.json";
 import "./base.scss";
 
 function App(): ReactElement {
