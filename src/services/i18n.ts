@@ -5,11 +5,12 @@ import {
   i18nBackendFetch,
 } from "@core";
 
-i18n.on("languageChanged", function (lng: string) {
+i18n.on("languageChanged", (lng: string) => {
   localStorage.setItem("lng", lng);
 });
-
+/* eslint-disable */
 (i18n as any)
+  /* eslint-enable */
   .use(i18nBackendFetch)
   .use(browserLanguageDetector)
   .use(initI18n)

@@ -44,3 +44,11 @@ html {
     position: relative;
   }
 }
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.transition {
+  transition: all 0.3s ease-out;
+}

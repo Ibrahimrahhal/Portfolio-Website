@@ -6,13 +6,14 @@ export default (): ReactElement => {
     <div className="hero">
       <div className="hero__circle" />
       <h1 className="hero__title--primary">
-        Designer,<span> Fullstack Developer and Student</span>
+        Senior Developer,
+        <span> Open Source Enthusiast</span>
       </h1>
       <h3 className="hero__title--secondary">Welcome to My Website</h3>
       <div className="hero__hr" />
       <div className="hero__call-to-action">
         <h2 className="hero__call-to-action__title">
-          Have an <span>Intersting</span> Project
+          Have an <span>Interesting</span> Project
         </h2>
         <a
           className="hero__call-to-action__btn"

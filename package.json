@@ -78,6 +78,7 @@
     "react-tsparticles": "^1.39.0",
     "resolve": "1.18.1",
     "resolve-url-loader": "^3.1.2",
+    "rxjs": "^7.5.2",
     "sass": "^1.32.8",
     "sass-loader": "^10.0.5",
     "semver": "7.3.2",
