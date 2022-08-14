@@ -1,9 +1,9 @@
-import React, { ReactElement } from "react";
+import React, { forwardRef, ReactElement, Ref } from "react";
 import "@components/header/index.scss";
 
-export default (): ReactElement => {
+  export default forwardRef((props, ref: Ref<HTMLElement>): ReactElement => {
   return (
-    <header className="header">
+    <header className="header" ref={ref}>
       <nav className="header__nav">
         <div className="header__logo">Ibrahim Rahhal</div>
         <div className="nav-menu">
@@ -44,4 +44,4 @@ export default (): ReactElement => {
       </a>
     </header>
   );
-};
+});

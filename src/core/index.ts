@@ -1,5 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-
 export { default as Particles } from "react-tsparticles";
 
 export { default as AnimatedSVG } from "react-lottie";

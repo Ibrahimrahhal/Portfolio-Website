@@ -1,27 +1,15 @@
 import React, { ReactElement } from "react";
-import Header from "@components/header";
 import Hero from "@components/hero";
 import Footer from "@components/footer";
-import Animation from "@components/animation";
 import "@screens/home/index.scss";
+import parallax from "@services/parallax";
+import Skills from "@components/skills";
 
-const animationOptions = {
-  loop: true,
-  autoplay: true,
-};
+const sections = [Hero, Skills];
 export default (): ReactElement => {
   return (
     <>
-      <Header />
-      <Hero />
-      <div className="home__scroll-indicator">
-        <Animation
-          height={75}
-          options={animationOptions}
-          animation="scroll"
-          width={75}
-        />
-      </div>
+      {sections.map((S, i) => (<S key={i} section={parallax.getSection(i)}/>))}
       <Footer />
     </>
   );

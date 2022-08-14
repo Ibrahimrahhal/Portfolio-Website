@@ -1,7 +1,6 @@
 import React, { ReactElement, useEffect, useRef } from "react";
 import Animation from "@components/animation";
-import "@components/hero/index.scss";
-import Header from "@components/header";
+import "@components/skills/index.scss";
 import { Section } from "@services/parallax";
 
 const animationOptions = {
@@ -16,7 +15,6 @@ export default ({section}: {section: Section}): ReactElement => {
   }, []);
   return (
     <>
-    <Header ref={sectionRef} />
     <div className="hero">
       <div className="hero__circle" />
       <h1 className="hero__title--primary">
@@ -37,7 +35,7 @@ export default ({section}: {section: Section}): ReactElement => {
         </a>
       </div>
     </div>
-    <div className="home__scroll-indicator">
+    <div className="home__scroll-indicator" ref={sectionRef}>
       <Animation
         height={75}
         options={animationOptions}

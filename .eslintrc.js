@@ -1,11 +1,5 @@
 module.exports = {
-    extends: [
-      'airbnb-typescript',
-      'airbnb/hooks',
-      'plugin:@typescript-eslint/recommended',
-      'plugin:jest/recommended',
-      'plugin:prettier/recommended'
-    ],
+
     plugins: ['react', '@typescript-eslint', 'jest'],
     env: {
       browser: true,
@@ -26,13 +20,6 @@ module.exports = {
       project: './tsconfig.json',
     },
     rules: {
-      'linebreak-style': 'off',
-      'prettier/prettier': [
-        'error',
-        {
-          endOfLine: 'auto',
-        },
-      ],
-      '@typescript-eslint/explicit-module-boundary-types': 'off'
+
     },
 };
