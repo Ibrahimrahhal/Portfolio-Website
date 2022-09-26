@@ -13,14 +13,16 @@ jobs:
     steps:
         - uses: actions/checkout@v2
 
-        - name: Install dependencies
-          run: npm i
+
 
         - name: Del Dep
           run: rm -rf node_modules package-lock.json && npm cache clean –force
           
         - name: Set NPM Version
           run: npm install -g npm@6 
+          
+        - name: Install dependencies
+          run: npm i
           
         - name: Build
           run: npm run build
