@@ -1,0 +1,126 @@
+.skills {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    &__wrapper {
+        height: 600vh;
+    }
+    &__circle {
+        height: 75vmin;
+        width: 75vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    &__border {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        border: solid 1px map-get($theme, "primary");
+        transition: opacity 0.2s ease-in-out;
+        .skills--out & {
+            opacity: 0;
+        }
+    }
+
+    &__title {
+        height: 80%;
+        width: 80%;
+        border-radius: 50%;
+        background: map-get($theme, "primary");
+        color: map-get($theme, "secondary");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-family: map-get($fonts, "secondary");
+        flex-direction: column;
+        font-size: 1.5rem;
+        text-align: center;
+        transition: transform 0.2s ease-in-out;
+        .skills--out & {
+            transform: scale(4);
+        }
+        h1, p {
+            transition: opacity 0.15s ease-in-out;
+            .skills--out & {
+                opacity: 0;
+            }
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+        }
+        p {
+            padding: 0 1.5rem;
+            font-size: 1rem;
+            font-weight: lighter;
+            text-transform: none;
+        }
+    }
+
+    &__skill {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: map-get($theme, "primary");
+        transition: all 0.2s ease-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            opacity: 0;
+            transition: opacity 0.2s ease-out;
+        }
+        span {
+            background-color: map-get($theme, "primary");
+            color: map-get($theme, "secondary");
+            padding: 0.3rem 1rem 0.3rem 1.5rem;
+            font-size: 0.8rem;
+            font-weight: lighter;
+            text-transform: uppercase;
+            transition: all 0.2s ease-out;
+            transform: translateX(50%) scale(0);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
+        }
+        &--opened {
+            height: 70px;
+            width: 70px;
+            img {
+                opacity: 0.85;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            &:hover {
+                span {
+                    transform: translateX(105%) scale(1);
+                }
+            }
+        }
+    }
+
+
+}

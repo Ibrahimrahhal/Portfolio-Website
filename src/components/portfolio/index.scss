@@ -1,0 +1,25 @@
+.portfolio {
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        height: 400vh;
+        width: 100vw;
+        color: map-get($theme, "secondary");
+        background: map-get($theme, "primary");
+        text-transform: uppercase;
+        margin: 0;
+        margin-top: -1rem;
+        position: relative;
+        
+        span {
+            display: block;
+        }
+    }
+    &__title {
+        
+        &__wrapper {
+            position: sticky;
+            top: 0;
+        }
+    }
+}

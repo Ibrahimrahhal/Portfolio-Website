@@ -1,7 +1,7 @@
 import React, { forwardRef, ReactElement, Ref } from "react";
 import "@components/header/index.scss";
 
-  export default forwardRef((props, ref: Ref<HTMLElement>): ReactElement => {
+export default forwardRef((props, ref: Ref<HTMLElement>): ReactElement => {
   return (
     <header className="header" ref={ref}>
       <nav className="header__nav">

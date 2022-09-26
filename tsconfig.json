@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -22,30 +18,28 @@
     "baseUrl": "./",
     "paths": {
       "@core": ["src/core/index.ts"],
-  
+
       "@components/*": ["src/components/*"],
       "@components": ["src/components"],
-  
+
       "@configs/*": ["src/configs/*"],
       "@configs": ["src/configs"],
-  
+
       "@services/*": ["src/services/*"],
       "@services": ["src/services"],
-  
+
       "@routers/*": ["src/routers/*"],
       "@routers": ["src/routers"],
-  
+
       "@screens/*": ["src/screens/*"],
       "@screens": ["src/screens"],
-      
+
       "@themes/*": ["src/theming/*"],
       "@themes": ["src/theming"],
-  
+
       "@globals/*": ["src/global/*"],
-      "@globals": ["src/global"],
+      "@globals": ["src/global"]
     }
   },
-  "include": [
-    "./src/**/*"
-  ]
+  "include": ["./src/**/*"]
 }
