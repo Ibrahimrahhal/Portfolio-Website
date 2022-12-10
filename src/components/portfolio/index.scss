@@ -1,25 +1,67 @@
 .portfolio {
     &__wrapper {
-        display: flex;
         justify-content: center;
-        height: 400vh;
+        height: 600vh;
         width: 100vw;
         color: map-get($theme, "secondary");
         background: map-get($theme, "primary");
         text-transform: uppercase;
         margin: 0;
-        margin-top: -1rem;
+        margin-top: -2rem;
         position: relative;
-        
         span {
             display: block;
         }
     }
     &__title {
-        
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        span {
+            background: map-get($theme, "primary");
+            padding: 1rem;
+        }
         &__wrapper {
             position: sticky;
             top: 0;
+            z-index: 2;
         }
+    }
+    &__item {
+        display: flex;
+        padding: 0 4rem;
+        height: 100vh;
+        position: sticky;
+    }
+    &__sep {
+        height: 50vh;
+    }
+    &__screenshots {
+        width: 70%;
+        position: relative;
+        &--desktop, &--mobile {
+            width: 70%;
+            height: 80%;
+            position: absolute;
+            bottom: 0;
+            overflow: hidden;
+            img {
+                max-width: 100%;
+            }
+        }
+        &--mobile {
+            width: auto;
+            height: 80%;
+            width: 25%;
+            right: 8rem;
+            box-shadow: -6px 10px 14px -2px rgba(0,0,0,0.48);
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
     }
 }
