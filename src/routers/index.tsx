@@ -7,7 +7,7 @@ export default (): ReactElement => {
   return (
     <Router>
       <Switch>
-      <Route path="/resume">
+        <Route path="/resume">
           <Resume />
         </Route>
         <Route path="/">

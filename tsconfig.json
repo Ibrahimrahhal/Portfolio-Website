@@ -44,5 +44,5 @@
       "@globals": ["src/global"]
     }
   },
-  "include": ["./src/**/*"],
+  "include": ["./src/**/*"]
 }

@@ -8,7 +8,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback="loading">
       <I18nProvider i18n={i18n}>
-        <SiteLoader load={() => import('./App')}/>
+        <SiteLoader load={() => import("./App")} />
       </I18nProvider>
     </Suspense>
   </React.StrictMode>,

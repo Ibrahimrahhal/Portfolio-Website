@@ -122,10 +122,7 @@ export default () => {
         })}
       </div>
       <div className="portfolio__wave">
-      <Animation
-            options={animationOptions}
-            animation="wave"
-          />
+        <Animation options={animationOptions} animation="wave" />
       </div>
     </div>
   );

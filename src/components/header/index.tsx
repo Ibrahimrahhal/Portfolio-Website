@@ -18,10 +18,7 @@ export default forwardRef((props, ref: Ref<HTMLElement>): ReactElement => {
             <a href="#projects" className="nav-menu-list__item">
               Projects
             </a>
-            <Link
-              to="./resume"
-              className="nav-menu-list__item"
-            >
+            <Link to="./resume" className="nav-menu-list__item">
               Resume
             </Link>
             <a
