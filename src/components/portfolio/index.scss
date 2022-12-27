@@ -1,7 +1,18 @@
 .portfolio {
+    &__wave {
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        > div {
+            position: absolute;
+            height: auto !important;
+            top: -26vw;
+            margin-left: -0.25rem !important;
+        }
+    }
     &__wrapper {
         justify-content: center;
-        height: 600vh;
+        height: 1400vh;
         width: 100vw;
         color: map-get($theme, "secondary");
         background: map-get($theme, "primary");

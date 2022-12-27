@@ -1,0 +1,20 @@
+.resume {
+    &__heading {
+        min-height: 30vh;
+        background:  map-get($theme, "primary");
+    }
+    &__document {
+        display: flex;
+        user-select: none;
+        justify-content: center;
+        margin-top: -25vh;
+        opacity: 0;
+        transition: opacity 0.2s ease-in;
+        &--visible {
+            opacity: 1;
+        }
+        & > div {
+            box-shadow: 0px 7px 17px 1px rgb(0 0 0 / 55%);
+        }
+    }
+}

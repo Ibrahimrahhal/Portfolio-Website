@@ -1,5 +1,6 @@
 import React, { forwardRef, ReactElement, Ref } from "react";
 import "@components/header/index.scss";
+import { Link } from "react-router-dom";
 
 export default forwardRef((props, ref: Ref<HTMLElement>): ReactElement => {
   return (
@@ -17,13 +18,12 @@ export default forwardRef((props, ref: Ref<HTMLElement>): ReactElement => {
             <a href="#projects" className="nav-menu-list__item">
               Projects
             </a>
-            <a
-              href="./Resume.pdf"
-              target="_blank"
+            <Link
+              to="./resume"
               className="nav-menu-list__item"
             >
               Resume
-            </a>
+            </Link>
             <a
               href="https://github.com/Ibrahimrahhal"
               className="nav-menu-list__item "

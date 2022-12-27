@@ -37,9 +37,12 @@
       "@themes/*": ["src/theming/*"],
       "@themes": ["src/theming"],
 
+      "@assets/*": ["src/assets/*"],
+      "@assets": ["src/assets"],
+
       "@globals/*": ["src/global/*"],
       "@globals": ["src/global"]
     }
   },
-  "include": ["./src/**/*"]
+  "include": ["./src/**/*"],
 }

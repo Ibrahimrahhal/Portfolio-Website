@@ -2,14 +2,13 @@ import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
 import { I18nProvider } from "@core";
 import i18n from "@services/i18n";
-import App from "./App";
+import SiteLoader from "@components/site-loader";
 import reportWebVitals from "./reportWebVitals";
-
 ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback="loading">
       <I18nProvider i18n={i18n}>
-        <App />
+        <SiteLoader load={() => import('./App')}/>
       </I18nProvider>
     </Suspense>
   </React.StrictMode>,

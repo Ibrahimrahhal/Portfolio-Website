@@ -162,7 +162,7 @@ export default (): ReactElement => {
                         >
                           <img
                             loading="lazy"
-                            src={`/svgs/${Skill.icon}.svg`}
+                            src={Skill.icon}
                             alt={Skill.name}
                             title={Skill.name}
                             height="60%"

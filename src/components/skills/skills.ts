@@ -5,39 +5,39 @@ export default [
     skills: [
       {
         name: "React",
-        icon: "react",
+        icon: require("@assets/skills/react.svg"),
       },
       {
         name: "Angular",
-        icon: "angular",
+       icon: require("@assets/skills/angular.svg"),
       },
       {
         name: "Typescript",
-        icon: "typescript",
+       icon: require("@assets/skills/typescript.svg"),
       },
       {
         name: "SASS",
-        icon: "scss",
+       icon: require("@assets/skills/scss.svg"),
       },
       {
         name: "Web Accessibility",
-        icon: "a3c",
+       icon: require("@assets/skills/a3c.svg"),
       },
       {
         name: "Webpack",
-        icon: "webpack",
+       icon: require("@assets/skills/webpack.svg"),
       },
       {
         name: "Gulp",
-        icon: "gulp",
+       icon: require("@assets/skills/gulp.svg"),
       },
       {
         name: "Jest",
-        icon: "jest",
+       icon: require("@assets/skills/jest.svg"),
       },
       {
         name: "GraphQL",
-        icon: "gql",
+       icon: require("@assets/skills/gql.svg"),
       },
     ],
   },
@@ -47,59 +47,59 @@ export default [
     skills: [
       {
         name: "NodeJs",
-        icon: "node",
+       icon: require("@assets/skills/node.svg"),
       },
       {
         name: "Deno",
-        icon: "deno",
+       icon: require("@assets/skills/deno.svg"),
       },
       {
         name: "MongoDB",
-        icon: "mongo",
+       icon: require("@assets/skills/mongo.svg"),
       },
       {
         name: "DJango",
-        icon: "django",
+       icon: require("@assets/skills/django.svg"),
       },
       {
         name: "ElasticSearch",
-        icon: "elastic",
+       icon: require("@assets/skills/elastic.svg"),
       },
       {
         name: "Java",
-        icon: "java",
+       icon: require("@assets/skills/java.svg"),
       },
       {
         name: "Kafka",
-        icon: "kafka",
+       icon: require("@assets/skills/kafka.svg"),
       },
       {
         name: "NestJs",
-        icon: "nest",
+       icon: require("@assets/skills/nest.svg"),
       },
       {
         name: "PHP",
-        icon: "php",
+       icon: require("@assets/skills/php.svg"),
       },
       {
         name: "Python",
-        icon: "python",
+       icon: require("@assets/skills/python.svg"),
       },
       {
         name: "Redis",
-        icon: "redis",
+       icon: require("@assets/skills/redis.svg"),
       },
       {
         name: "Spring",
-        icon: "spring",
+       icon: require("@assets/skills/spring.svg"),
       },
       {
         name: "Postgres",
-        icon: "sql",
+       icon: require("@assets/skills/sql.svg"),
       },
       {
         name: "Wordpress",
-        icon: "wordpress",
+       icon: require("@assets/skills/wordpress.svg"),
       },
     ],
   },
@@ -109,23 +109,23 @@ export default [
     skills: [
       {
         name: "Docker",
-        icon: "docker",
+       icon: require("@assets/skills/docker.svg"),
       },
       {
         name: "Kubernetes",
-        icon: "kube",
+       icon: require("@assets/skills/kube.svg"),
       },
       {
         name: "Jenkins",
-        icon: "jenkins",
+       icon: require("@assets/skills/jenkins.svg"),
       },
       {
         name: "AWS",
-        icon: "aws",
+       icon: require("@assets/skills/aws.svg"),
       },
       {
         name: "Terrafrom",
-        icon: "teraform",
+       icon: require("@assets/skills/teraform.svg"),
       },
     ],
   },

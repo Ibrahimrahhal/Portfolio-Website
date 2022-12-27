@@ -1,0 +1,13 @@
+.site-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+    &.fade {
+        opacity: 0;
+    }
+}
