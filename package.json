@@ -6,7 +6,7 @@
     "start": "set PORT=3006 && node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\" \"./**/*.json\" \"./**/*.js\"",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\" \"./**/*.json\" \"./**/*.js\" \"./**/*.html\"",
     "lint": "tsc --noEmit && eslint src/**/*.ts{,x}"
   },
   "dependencies": {
@@ -116,6 +116,7 @@
     ]
   },
   "devDependencies": {
+    "@iconify/react": "^4.0.1",
     "@types/react-lottie": "^1.2.5",
     "@types/react-pdf": "^6.2.0",
     "@typescript-eslint/eslint-plugin": "^4.21.0",

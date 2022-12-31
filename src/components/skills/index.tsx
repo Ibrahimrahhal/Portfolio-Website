@@ -32,10 +32,7 @@ const buildSkillsMap = () => {
   } = {
     0: {
       name: "Things I'm Good At",
-      desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Suspendisse euismod odio at massa finibus, ac aliquet nisi
-      fringilla. Sed a libero dapibus, tristique est at, vulputate
-      nulla. Morbi vitae fermentum mauris.`,
+      desc: `I'm a software engineer who is skilled in all aspects of development, from front-end to back-end and even devops and AI. I bring projects from concept to deployment with ease.`,
       skills: Array(skillsWidgetOptions.numberOfSkillsToShowPerSlide).fill({
         name: "",
         icon: "empty",
