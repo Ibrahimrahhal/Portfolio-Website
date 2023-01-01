@@ -1,6 +1,6 @@
 @import '~include-media/dist/_include-media.scss';
 
-@mixin hvr-bounce-to-bottom {
+@mixin hvr-bounce-to-bottom($colorPrimary: map-get($theme, "primary"), $colorSecondary: map-get($theme, "secondary")) {
     display: inline-block;
     vertical-align: middle;
     transform: perspective(1px) translateZ(0);
@@ -16,7 +16,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: map-get($theme, "primary");
+        background: $colorPrimary;
         transform: scaleY(0);
         transform-origin: 50% 0;
         transition-property: transform;
@@ -26,7 +26,7 @@
     &:hover, 
     &:focus,
     &:active {
-        color: map-get($theme, "secondary");
+        color: $colorSecondary;
         &:before {
             transform: scaleY(1);
             transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);

@@ -1,0 +1,40 @@
+.get-in-touch {
+    text-align: center;
+    margin-top: 15rem;
+    &__animation-wrapper {
+        height: 500px;
+    }
+    &__desc {
+        font-weight: 300;
+        width: 800px;
+        max-width: 100%;
+        padding:0 2rem;
+        margin: -5rem auto 2rem;
+    }
+
+    &__actions {
+        width: 800px;
+        max-width: 100%;
+        padding:0 2rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        .btn {
+            font-family: map-get($fonts, "secondary");
+            text-decoration: none;
+            border: solid 3px map-get($theme, "primary");
+            padding: 0.625rem 1rem;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            color: map-get($theme, "primary");
+            @include hvr-bounce-to-bottom;
+        }
+        .btn__calender {
+            color: map-get($theme, "secondary");
+            background-color: map-get($theme, "primary");
+            @include hvr-bounce-to-bottom(map-get($theme, "secondary"), map-get($theme, "primary"));
+        }
+    }
+    
+}
