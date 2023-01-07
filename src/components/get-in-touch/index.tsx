@@ -7,7 +7,7 @@ const animationOptions = {
 };
 export default () => {
   return (
-    <div className="get-in-touch">
+    <div className="get-in-touch" id="get-in-touch">
       <h1 className="get-in-touch__title">Get in Touch</h1>
       <div className="get-in-touch__animation-wrapper">
         <Animation options={animationOptions} animation="friends" />

@@ -11,7 +11,7 @@ const PortfolioSites = [
   {
     title: "Science.org",
     description:
-      "Science.org is a website that provides a platform for scientists to share their research and findings with the public. It is a community-driven website that allows scientists to post their research and findings, and for the public to comment on and discuss the research.",
+      "As the lead engineer on the Science.org project, I developed and maintained a website with over 2.5 million daily users using Node.js, Java, Spring, and TypeScript. I ensured the website matched the client's Figma design and was functional, efficient, and visually appealing. I successfully delivered the project on time, using my expertise in these technologies and attention to detail. My work contributed to the creation of a user-friendly and visually stunning website for scientists and the general public.",
     desktop: require("@assets/portfolio/aaas-desktop.png"),
     mobile: require("@assets/portfolio/aaas-mobile.png"),
     scrollSpeed: [0, -500],
@@ -19,7 +19,7 @@ const PortfolioSites = [
   {
     title: "PNAS.org",
     description:
-      "PNAS.org is a website that provides a platform for scientists to share their research and findings with the public. It is a community-driven website that allows scientists to post their research and findings, and for the public to comment on and discuss the research.",
+      "As the lead developer on the PNAS.org project, I played a crucial role in the development and maintenance of the website for a prestigious scientific journal. I successfully delivered the project on time, to a high quality standard, and in an exceptional timeframe. My work contributed to the creation of a functional, efficient, and user-friendly website providing access to high-quality scientific research.",
     desktop: require("@assets/portfolio/pnas-desktop.png"),
     mobile: require("@assets/portfolio/pnas-mobile.png"),
     scrollSpeed: [0, -200],
@@ -27,7 +27,7 @@ const PortfolioSites = [
   {
     title: "Find Yours",
     description:
-      "Find Yours is a website that provides a platform for scientists to share their research and findings with the public. It is a community-driven website that allows scientists to post their research and findings, and for the public to comment on and discuss the research.",
+      "As the sole developer on the 'Find Yours' web app project, I created and maintained a marketplace for automotive dealers using React, Node.js, TypeScript, MySQL, AWS, Typeorm, and Serverless. I successfully delivered the project on time, using my strong technical skills and ability to work independently. My work helped to create a functional and user-friendly platform for finding and purchasing vehicles.",
     desktop: require("@assets/portfolio/fy-desktop.png"),
     mobile: require("@assets/portfolio/fy-mobile.png"),
     scrollSpeed: [0, -120],
@@ -67,7 +67,7 @@ const PortfolioSites = [
 ];
 export default () => {
   return (
-    <div className="portfolio">
+    <div className="portfolio" id="portfolio">
       <div className="portfolio__wrapper">
         <Parallax
           scale={[5, 0.5]}

@@ -9,14 +9,14 @@ export default forwardRef((props, ref: Ref<HTMLElement>): ReactElement => {
         <div className="header__logo">Ibrahim Rahhal</div>
         <div className="nav-menu">
           <div className="nav-menu-list">
-            <a href="#skill" className="nav-menu-list__item">
+            <a href="#skills" className="nav-menu-list__item">
               Skills Set
             </a>
-            <a href="#education" className="nav-menu-list__item">
-              Education
+            <a href="#portfolio" className="nav-menu-list__item">
+              Portfolio
             </a>
-            <a href="#projects" className="nav-menu-list__item">
-              Projects
+            <a href="#open-source" className="nav-menu-list__item">
+              Open Source
             </a>
             <Link to="./resume" className="nav-menu-list__item">
               Resume
@@ -36,7 +36,7 @@ export default forwardRef((props, ref: Ref<HTMLElement>): ReactElement => {
           </div>
         </div>
       </nav>
-      <a className="header__contact" href="./form_handle.php?type=message">
+      <a className="header__contact" href="#get-in-touch">
         Get in Touch
       </a>
     </header>

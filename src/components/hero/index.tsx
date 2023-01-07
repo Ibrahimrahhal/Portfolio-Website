@@ -27,10 +27,7 @@ export default (): ReactElement => {
           <h2 className="hero__call-to-action__title">
             Have an <span>Interesting</span> Project
           </h2>
-          <a
-            className="hero__call-to-action__btn"
-            href="./form_handle.php?type=prject"
-          >
+          <a className="hero__call-to-action__btn" href="#get-in-touch">
             Start a Project
           </a>
         </div>

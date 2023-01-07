@@ -42,7 +42,7 @@ export default () => {
   const projectsTwoRef = useRef(null);
 
   return (
-    <div className="open-source__wrapper" ref={wrapperRef}>
+    <div className="open-source__wrapper" id="open-source" ref={wrapperRef}>
       <div className="open-source">
         <h1 className="open-source__title">
           <span>Open Source Projects</span>

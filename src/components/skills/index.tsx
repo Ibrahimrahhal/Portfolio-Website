@@ -113,7 +113,7 @@ export default (): ReactElement => {
           setProgress(percentage);
         }}
       >
-        <div className="skills__wrapper" ref={wrapperRef}>
+        <div className="skills__wrapper" id="skills" ref={wrapperRef}>
           <Parallax
             targetElement={targetElement}
             style={{ position: "sticky", top: 0 }}

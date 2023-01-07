@@ -35,10 +35,7 @@
       property="og:description"
       content="Senior full-stack software engineer. Ready to deliver top-quality results on any project. My courses & blogs offer guidance for fellow developers."
     />
-    <meta
-      property="og:image"
-      content="img/rahhal.png"
-    />
+    <meta property="og:image" content="img/rahhal.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -51,10 +48,7 @@
       property="twitter:description"
       content="Senior full-stack software engineer. Ready to deliver top-quality results on any project. My courses & blogs offer guidance for fellow developers."
     />
-    <meta
-      property="twitter:image"
-      content="img/rahhal.png"
-    />
+    <meta property="twitter:image" content="img/rahhal.png" />
 
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -70,6 +64,20 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7E4YCV8G7W"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-7E4YCV8G7W");
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
