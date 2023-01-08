@@ -15,8 +15,10 @@ export default () => {
       <p className="get-in-touch__desc">
         I'm always excited to connect with new people and make some friendships.
         If you'd like to get in touch, please don't hesitate to send me an email
-        or book a slot in my calender. I'm looking forward to getting to know
+        or book a slot in my calender. <div>
+        I'm looking forward to getting to know
         you!
+        </div>
       </p>
       <div className="get-in-touch__actions">
         <a

@@ -9,10 +9,21 @@ const icons = [
     title: "Spotify",
   },
   {
+    class: "medium",
+    link: "https://medium.com/@ibrahim.rahhal",
+    title: "Medium",
+  },
+  {
     class: "facebook",
     link: "https://www.facebook.com/ibrahim.ra7al/",
     title: "Facebook",
   },
+  {
+    class: "stackoverflow",
+    link: "https://stackoverflow.com/users/14016826/ibrahim-rahhal",
+    title: "Stack Overflow",
+  },
+
   {
     class: "twitter",
     link: "https://twitter.com/IbrahimRahhal18",
@@ -20,13 +31,19 @@ const icons = [
   },
   {
     class: "behance",
-    link: "https://www.behance.net/ibrahimrah34c5",
+    link: "https://www.behance.net/ibrahimrahhal",
     title: "Behance",
   },
   {
     class: "linkedin",
-    link: "https://www.linkedin.com/in/rahhal-ibrahim/",
+    link: "https://www.linkedin.com/in/ibrahim-rahhal/",
     title: "Linkedin",
+  },
+
+  {
+    class: "npm",
+    link: "https://www.npmjs.com/~ibrahim-rahhal",
+    title: "NPM",
   },
 ];
 export default () => {

@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-medium:before {
+  content: "\e901";
+}
 .icon-spotify:before {
   content: "\e900";
 }
@@ -42,4 +45,10 @@
 }
 .icon-linkedin:before {
   content: "\eaca";
+}
+.icon-npm:before {
+  content: "\eab1";
+}
+.icon-stackoverflow:before {
+  content: "\ead0";
 }
