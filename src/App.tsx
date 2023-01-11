@@ -1,12 +1,25 @@
-import React, { ReactElement, useRef } from "react";
+import { ReactElement } from "react";
 import { Particles } from "@core";
 import RootRouter from "@routers";
 import ParticleConfig from "@configs/particle.config.json";
-import { Parallax, ParallaxProvider } from "react-scroll-parallax";
-
+import { ParallaxProvider } from "react-scroll-parallax";
 import "./base.scss";
+import Mobile from "@components/mobile";
 
+function checkIfMobile() {
+  return (
+    navigator.userAgent.match(/Android/i) ||
+    navigator.userAgent.match(/webOS/i) ||
+    navigator.userAgent.match(/iPhone/i) ||
+    navigator.userAgent.match(/iPad/i) ||
+    navigator.userAgent.match(/iPod/i) ||
+    navigator.userAgent.match(/BlackBerry/i) ||
+    navigator.userAgent.match(/Windows Phone/i)
+  );
+}
 function App(): ReactElement {
+  const isMobile = checkIfMobile();
+
   return (
     <ParallaxProvider>
       <div className="site-wrapper">
@@ -17,7 +30,8 @@ function App(): ReactElement {
           />
         </div>
         <div className="site-wrapper__content">
-          <RootRouter />
+          {!isMobile && <RootRouter />}
+          {isMobile && <Mobile />}
         </div>
       </div>
     </ParallaxProvider>

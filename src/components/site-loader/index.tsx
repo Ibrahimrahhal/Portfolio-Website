@@ -1,3 +1,4 @@
+import Loader from "@components/loader";
 import "@components/site-loader/index.scss";
 import { ReactElement, useEffect, useState } from "react";
 
@@ -19,7 +20,9 @@ export default (props: {
   return (
     <>
       {!loaderHidden && (
-        <div className={`site-loader ${component ? "fade" : ""}`} />
+        <div className={`site-loader ${component ? "fade" : ""}`}>
+          <Loader />
+        </div>
       )}
       {component}
     </>

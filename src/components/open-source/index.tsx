@@ -3,14 +3,31 @@ import { Icon } from "@iconify/react";
 import { useCallback, useRef, useState } from "react";
 import { Parallax } from "react-scroll-parallax";
 
-const ProjectCard = () => {
+const ProjectCard = ({
+  project,
+  isHidden,
+}: {
+  project: {
+    name: string;
+    desc: string;
+    github?: string;
+    npm?: string;
+    link: string;
+  };
+  isHidden?: boolean;
+}) => {
+  const { name, desc, github, npm, link } = project;
   return (
-    <div className="open-source__card">
-      <h3 className="open-source__card__title">Webpack-File-Inherit</h3>
-      <p className="open-source__card__desc">
-        A webpack plugin that allows you to inherit files from other
-        directories.
-      </p>
+    <a
+      className="open-source__card"
+      style={{
+        visibility: isHidden ? "hidden" : "visible",
+      }}
+      target="_blank"
+      href={link}
+    >
+      <h3 className="open-source__card__title">{name}</h3>
+      <p className="open-source__card__desc">{desc}</p>
       <div className="open-source__card__links">
         <div className="open-source__card__contributes">
           <img
@@ -19,19 +36,86 @@ const ProjectCard = () => {
           />
         </div>
         <div className="open-source__card__metrics">
-          <div className="open-source__card__metric">
+          <div
+            className="open-source__card__metric"
+            style={{
+              visibility: github ? "visible" : "hidden",
+            }}
+          >
             <Icon icon="simple-icons:github" height={20} width={20} />
-            <span>1.2k</span>
+            <span>{github}</span>
           </div>
-          <div className="open-source__card__metric">
+          <div
+            className="open-source__card__metric"
+            style={{
+              visibility: npm ? "visible" : "hidden",
+            }}
+          >
             <Icon icon="simple-icons:npm" height={20} width={20} />
-            <span>1.2k</span>
+            <span>{npm}</span>
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
+
+const projects = [
+  {
+    name: "react-image-curves-editor",
+    desc: "React components to manipulate images curves & view it's levels like within photoshop",
+    github: "10",
+    npm: "300+",
+    link: "https://github.com/Ibrahimrahhal/react-image-curves-editor",
+  },
+  {
+    name: "webpack-file-inherit",
+    desc: "Webpack loader that allows you to extend files & override particular block from them, similar to pug extend but for any file.",
+    github: "5",
+    npm: "100+",
+    link: "https://github.com/Ibrahimrahhal/webpack-file-inherit",
+  },
+  {
+    name: "babel-plugin-minify-mangle-names",
+    desc: "a fork of @babel/babel-plugin-minify-mangle-names that support JSX variable names mangling",
+    npm: "300+",
+    link: "https://www.npmjs.com/package/@ibrahim-rahhal/babel-plugin-minify-mangle-names",
+  },
+  {
+    name: "jordan-cities-geojson",
+    desc: "GeoJSON data for all jordan cities",
+    npm: "300+",
+    github: "5",
+    link: "https://www.npmjs.com/package/jordan-cities-geojson",
+  },
+  {
+    name: "inject-global-sass",
+    desc: "Webpack loader to inject specified sass file(s) globally to all loaded sass files",
+    npm: "200+",
+    link: "https://www.npmjs.com/package/inject-global-sass",
+  },
+  {
+    name: "webpack-extend-json",
+    desc: "Webpack loader that enables you to extend JSON file.",
+    npm: "100+",
+    link: "https://www.npmjs.com/package/webpack-extend-json",
+  },
+  {
+    name: "webpack-loader-typescript-template",
+    desc: "Github public template that includes a simple boilerplate for creating webpack loader using typescript",
+    link: "https://github.com/Ibrahimrahhal/webpack-loader-typescript-template",
+  },
+  {
+    name: "css-lens",
+    desc: "Trained deep learning model to detect site with major css being missing/ broken from a screenshot",
+    link: "https://hub.docker.com/repository/docker/ibrahimrahhal/site-monitor/general",
+  },
+  {
+    name: "broken-sites-screenshots-dataset",
+    desc: "a dataset of 20K images of labeled screenshot for both broken(major css missing) & working sites",
+    link: "https://www.kaggle.com/datasets/ibrahimrahhal/broken-working-website-screen-shots",
+  },
+];
 
 export default () => {
   const [wrapperElm, setWrapperElm] = useState(null);
@@ -67,15 +151,13 @@ export default () => {
               }}
               targetElement={wrapperElm}
             >
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
+              <ProjectCard project={{} as any} isHidden={true} />;
+              {projects
+                .slice(0, Math.ceil(projects.length / 2))
+                .map((project, index) => {
+                  return <ProjectCard project={project} />;
+                })}
+              <ProjectCard project={{} as any} isHidden={true} />;
             </Parallax>
           )}
         </div>
@@ -91,15 +173,13 @@ export default () => {
               }}
               targetElement={wrapperElm}
             >
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
+              <ProjectCard project={{} as any} isHidden={true} />;
+              {projects
+                .slice(Math.ceil(projects.length / 2), projects.length)
+                .map((project, index) => {
+                  return <ProjectCard project={project} />;
+                })}
+              <ProjectCard project={{} as any} isHidden={true} />;
             </Parallax>
           )}
         </div>

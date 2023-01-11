@@ -7,6 +7,9 @@
     background: black;
     opacity: 1;
     transition: opacity 0.2s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &.fade {
         opacity: 0;
     }

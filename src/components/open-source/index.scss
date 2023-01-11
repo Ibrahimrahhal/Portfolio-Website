@@ -34,21 +34,31 @@
     &__card {
         width: 400px;
         min-width: 400px;
-        display: inline-block;
+        display: inline-flex;
+        flex-direction: column;
         padding: 1rem;
         background: map-get($theme, "secondary");
         box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.1);
         border-radius: 2px;
         margin: 1rem;
+        text-decoration: none;
+        color: map-get($theme, "primary");
+        transition: all 0.2s ease-in;
+        &:hover {
+            transform: scale(1.05)
+        }
+        &__title {
+            margin-bottom: 0;
+        }
         &__desc {
             font-weight: 300;
             margin-bottom: 1rem;
             opacity: 0.8;
+            flex-grow: 1;
         }
         &__links {
             display: flex;
             justify-content: space-between;
-            margin-top: 2rem;
         }
         &__contributes {
             img {
