@@ -26,7 +26,14 @@ html {
         display: none;
       }
     }
+    // hide scrollbars
+  &::-webkit-scrollbar { 
+      display: none;
   }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  }
+
   font-family: map-get($fonts, "primary"), sans-serif;
 }
 .site-wrapper {
