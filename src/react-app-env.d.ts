@@ -71,4 +71,4 @@ declare module "*.module.sass" {
   export default classes;
 }
 
-declare module 'framer-motion/dist/framer-motion';
+declare module "framer-motion/dist/framer-motion";

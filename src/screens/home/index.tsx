@@ -8,7 +8,7 @@ import OpenSource from "@components/open-source";
 import getInTouch from "@components/get-in-touch";
 import Reading from "@components/readings";
 
-const sections = [Hero, Skills, Portfolio, Reading, OpenSource , getInTouch];
+const sections = [Hero, Skills, Portfolio, Reading, OpenSource, getInTouch];
 export default (): ReactElement => {
   return (
     <>

@@ -6,27 +6,47 @@ import {
 } from "framer-motion/dist/framer-motion";
 import { useRef } from "react";
 
-
-export default function ReadingSection({
-  key
-}: {
-  key: number;
-}) {
+export default function ReadingSection({ key }: { key: number }) {
   const randomProducts = [
-    {title: "Product 1", link: "https://www.google.com", thumbnail: "https://source.unsplash.com/random/600x600"},
-    {title: "Product 2", link: "https://www.google.com", thumbnail: "https://source.unsplash.com/random/600x600"},
-    {title: "Product 3", link: "https://www.google.com", thumbnail: "https://source.unsplash.com/random/600x600"},
-    {title: "Product 4", link: "https://www.google.com", thumbnail: "https://source.unsplash.com/random/600x600"},
-    {title: "Product 5", link: "https://www.google.com", thumbnail: "https://source.unsplash.com/random/600x600"},
-    {title: "Product 6", link: "https://www.google.com", thumbnail: "https://source.unsplash.com/random/600x600"},
+    {
+      title: "Product 1",
+      link: "https://www.google.com",
+      thumbnail: "https://source.unsplash.com/random/600x600",
+    },
+    {
+      title: "Product 2",
+      link: "https://www.google.com",
+      thumbnail: "https://source.unsplash.com/random/600x600",
+    },
+    {
+      title: "Product 3",
+      link: "https://www.google.com",
+      thumbnail: "https://source.unsplash.com/random/600x600",
+    },
+    {
+      title: "Product 4",
+      link: "https://www.google.com",
+      thumbnail: "https://source.unsplash.com/random/600x600",
+    },
+    {
+      title: "Product 5",
+      link: "https://www.google.com",
+      thumbnail: "https://source.unsplash.com/random/600x600",
+    },
+    {
+      title: "Product 6",
+      link: "https://www.google.com",
+      thumbnail: "https://source.unsplash.com/random/600x600",
+    },
   ];
-  return (<div className="mt-40">
-    <HeroParallax products={randomProducts}/>
-  </div>)
-
+  return (
+    <div className="mt-40">
+      <HeroParallax products={randomProducts} />
+    </div>
+  );
 }
 const HeroParallax = ({
-  products
+  products,
 }: {
   products: {
     title: string;
@@ -140,7 +160,7 @@ export const ProductCard = ({
     link: string;
     thumbnail: string;
   };
-  translate: any
+  translate: any;
 }) => {
   return (
     <motion.div
@@ -153,10 +173,7 @@ export const ProductCard = ({
       key={product.title}
       className="group/product h-96 w-[30rem] relative flex-shrink-0"
     >
-      <a
-        href={product.link}
-        className="block group-hover/product:shadow-2xl "
-      >
+      <a href={product.link} className="block group-hover/product:shadow-2xl ">
         <img
           src={product.thumbnail}
           height="600"

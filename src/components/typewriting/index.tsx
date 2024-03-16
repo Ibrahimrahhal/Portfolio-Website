@@ -1,5 +1,10 @@
 import { cn } from "@utils/cn";
-import { motion, stagger, useAnimate, useInView } from "framer-motion/dist/framer-motion";
+import {
+  motion,
+  stagger,
+  useAnimate,
+  useInView,
+} from "framer-motion/dist/framer-motion";
 import { useEffect } from "react";
 
 const TypewriterEffect = ({
@@ -51,10 +56,7 @@ const TypewriterEffect = ({
                 <motion.span
                   initial={{}}
                   key={`char-${index}`}
-                  className={cn(
-                    `text-black opacity-0 hidden`,
-                    word.className
-                  )}
+                  className={cn(`text-black opacity-0 hidden`, word.className)}
                 >
                   {char}
                 </motion.span>
@@ -182,6 +184,5 @@ export const TypewriterEffectSmooth = ({
     </div>
   );
 };
-
 
 export default TypewriterEffect;
