@@ -2,14 +2,15 @@
     text-align: center;
     margin-top: 15rem;
     &__animation-wrapper {
-        height: 500px;
+        height: 300px;
+        width: 500px;
     }
     &__desc {
         font-weight: 300;
         width: 800px;
         max-width: 100%;
         padding:0 2rem;
-        margin: -5rem auto 2rem;
+        margin: 5rem auto 2rem;
     }
 
     &__actions {

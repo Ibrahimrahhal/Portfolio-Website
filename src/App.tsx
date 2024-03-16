@@ -4,6 +4,7 @@ import RootRouter from "@routers";
 import ParticleConfig from "@configs/particle.config.json";
 import { ParallaxProvider } from "react-scroll-parallax";
 import "./base.scss";
+import "./tailwind-out.css";
 import Mobile from "@components/mobile";
 
 function checkIfMobile() {

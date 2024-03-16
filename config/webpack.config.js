@@ -415,6 +415,7 @@ module.exports = function (webpackEnv) {
                       runtime: hasJsxRuntime ? "automatic" : "classic",
                     },
                   ],
+                  "@babel/preset-env",
                 ],
 
                 plugins: [
@@ -457,6 +458,7 @@ module.exports = function (webpackEnv) {
                     require.resolve("babel-preset-react-app/dependencies"),
                     { helpers: true },
                   ],
+                  "@babel/preset-env",
                 ],
                 cacheDirectory: true,
                 // See #6846 for context on why cacheCompression is disabled

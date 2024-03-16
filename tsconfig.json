@@ -22,6 +22,10 @@
       "@components/*": ["src/components/*"],
       "@components": ["src/components"],
 
+
+      "@utils/*": ["src/utils/*"],
+      "@utils": ["src/utils"],
+
       "@configs/*": ["src/configs/*"],
       "@configs": ["src/configs"],
 
