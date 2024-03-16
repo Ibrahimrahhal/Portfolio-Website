@@ -4,6 +4,8 @@ import { I18nProvider } from "@core";
 import i18n from "@services/i18n";
 import SiteLoader from "@components/site-loader";
 import reportWebVitals from "./reportWebVitals";
+import "./core";
+
 ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback="loading">

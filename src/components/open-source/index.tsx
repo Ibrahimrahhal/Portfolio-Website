@@ -1,3 +1,4 @@
+import { CardBody, CardContainer, CardItem } from "@components/3d-card";
 import "@components/open-source/index.scss";
 import { Icon } from "@iconify/react";
 import { useCallback, useRef, useState } from "react";
@@ -18,45 +19,57 @@ const ProjectCard = ({
 }) => {
   const { name, desc, github, npm, link } = project;
   return (
-    <a
-      className="open-source__card"
-      style={{
-        visibility: isHidden ? "hidden" : "visible",
-      }}
-      target="_blank"
-      href={link}
-    >
-      <h3 className="open-source__card__title">{name}</h3>
-      <p className="open-source__card__desc">{desc}</p>
-      <div className="open-source__card__links">
-        <div className="open-source__card__contributes">
-          <img
-            src="https://avatars.githubusercontent.com/u/24377288?v=4"
-            alt="Ibrahim Rahhal"
-          />
-        </div>
-        <div className="open-source__card__metrics">
-          <div
-            className="open-source__card__metric"
-            style={{
-              visibility: github ? "visible" : "hidden",
-            }}
+    <CardContainer className="inter-var">
+      <CardBody>
+        <a
+          className="open-source__card"
+          style={{
+            visibility: isHidden ? "hidden" : "visible",
+          }}
+          target="_blank"
+          href={link}
+        >
+          <CardItem translateZ="50">
+            <h3 className="open-source__card__title">{name}</h3>
+          </CardItem>
+          <CardItem translateZ="50">
+            <p className="open-source__card__desc">{desc}</p>
+          </CardItem>
+          <CardItem
+            as={"div"}
+            translateZ="100"
+            className="open-source__card__links w-full"
           >
-            <Icon icon="simple-icons:github" height={20} width={20} />
-            <span>{github}</span>
-          </div>
-          <div
-            className="open-source__card__metric"
-            style={{
-              visibility: npm ? "visible" : "hidden",
-            }}
-          >
-            <Icon icon="simple-icons:npm" height={20} width={20} />
-            <span>{npm}</span>
-          </div>
-        </div>
-      </div>
-    </a>
+            <div className="open-source__card__contributes">
+              <img
+                src="https://avatars.githubusercontent.com/u/24377288?v=4"
+                alt="Ibrahim Rahhal"
+              />
+            </div>
+            <div className="open-source__card__metrics">
+              <div
+                className="open-source__card__metric"
+                style={{
+                  visibility: github ? "visible" : "hidden",
+                }}
+              >
+                <Icon icon="simple-icons:github" height={20} width={20} />
+                <span>{github}</span>
+              </div>
+              <div
+                className="open-source__card__metric"
+                style={{
+                  visibility: npm ? "visible" : "hidden",
+                }}
+              >
+                <Icon icon="simple-icons:npm" height={20} width={20} />
+                <span>{npm}</span>
+              </div>
+            </div>
+          </CardItem>
+        </a>
+      </CardBody>
+    </CardContainer>
   );
 };
 

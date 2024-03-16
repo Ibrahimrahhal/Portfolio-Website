@@ -114,12 +114,12 @@
   margin-top: 1rem
 }
 
-.mt-40 {
-  margin-top: 10rem
-}
-
 .mt-8 {
   margin-top: 2rem
+}
+
+.mt-80 {
+  margin-top: 20rem
 }
 
 .block {
@@ -204,6 +204,12 @@
 
 .w-\[calc\(100\%-2\.25rem\)\] {
   width: calc(100% - 2.25rem)
+}
+
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content
 }
 
 .w-full {
@@ -532,10 +538,20 @@
   transition-duration: 150ms
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms
+}
+
 .transition-opacity {
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms
+}
+
+.duration-200 {
+  transition-duration: 200ms
 }
 
 .duration-500 {
@@ -544,6 +560,10 @@
 
 .duration-700 {
   transition-duration: 700ms
+}
+
+.ease-linear {
+  transition-timing-function: linear
 }
 
 .\[perspective\:1000px\] {
@@ -632,4 +652,9 @@
     font-size: 2.25rem;
     line-height: 2.5rem
   }
+}
+
+.\[\&\>\*\]\:\[transform-style\:preserve-3d\]>* {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d
 }

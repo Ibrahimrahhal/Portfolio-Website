@@ -6,41 +6,44 @@ import {
 } from "framer-motion/dist/framer-motion";
 import { useRef } from "react";
 
+let randomProducts = [
+  {
+    title:
+      "Ninja Your Way to the Top: 7 Tips I Wish I knew for Crushing It in Your Tech Career",
+    link: "https://medium.com/@ibrahim.rahhal/ninja-your-way-to-the-top-10-tips-i-wish-i-knew-for-crushing-it-in-your-tech-career-4960b7d58b44",
+    thumbnail:
+      "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*F1ykAO-bxYJOGPsf1E0-SA.jpeg",
+  },
+  {
+    title: "Speeding Up Webpack Build: Our Success Story of +95% Faster Builds",
+    link: "https://medium.com/@ibrahim.rahhal/speeding-up-webpack-build-times-our-success-story-of-95-faster-builds-55a4742d6ad3",
+    thumbnail:
+      "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*9iEPquU8Agmct3lnx93nzw.png",
+  },
+  {
+    title: "Why Algorithms are Equally Important for Front-End Engineers",
+    link: "https://medium.com/@ibrahim.rahhal/why-algorithms-are-equally-important-for-front-end-engineers-10938a2aa568",
+    thumbnail:
+      "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*eEvfi8if4B27aaGt6BvaPw.png",
+  },
+  {
+    title: "Unleashing the Power of JavaScript ASTs",
+    link: "https://medium.com/@ibrahim.rahhal/unleashing-the-power-of-javascript-asts-fb727d9fe34f",
+    thumbnail:
+      "https://miro.medium.com/v2/resize:fit:1104/format:webp/1*BZzNxq2jwR_-ulE4I2kR7Q.jpeg",
+  },
+  {
+    title: "The Complete Webpack Guide for Beginners",
+    link: "https://medium.com/@ibrahim.rahhal/the-complete-webpack-guide-for-beginners-9a15838bc6d3",
+    thumbnail:
+      "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*8WOdmW70J2UXnAAm3CNMuQ.jpeg",
+  },
+];
+
+randomProducts = [...randomProducts, ...randomProducts, ...randomProducts];
 export default function ReadingSection({ key }: { key: number }) {
-  const randomProducts = [
-    {
-      title: "Product 1",
-      link: "https://www.google.com",
-      thumbnail: "https://source.unsplash.com/random/600x600",
-    },
-    {
-      title: "Product 2",
-      link: "https://www.google.com",
-      thumbnail: "https://source.unsplash.com/random/600x600",
-    },
-    {
-      title: "Product 3",
-      link: "https://www.google.com",
-      thumbnail: "https://source.unsplash.com/random/600x600",
-    },
-    {
-      title: "Product 4",
-      link: "https://www.google.com",
-      thumbnail: "https://source.unsplash.com/random/600x600",
-    },
-    {
-      title: "Product 5",
-      link: "https://www.google.com",
-      thumbnail: "https://source.unsplash.com/random/600x600",
-    },
-    {
-      title: "Product 6",
-      link: "https://www.google.com",
-      thumbnail: "https://source.unsplash.com/random/600x600",
-    },
-  ];
   return (
-    <div className="mt-40">
+    <div className="mt-80">
       <HeroParallax products={randomProducts} />
     </div>
   );
@@ -140,12 +143,12 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold ">
-        The Ultimate <br /> development studio
+        Discover the joy <br /> of reading with me.
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8">
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
+        Step into my realm of advanced tech insights and leadership wisdom. As a
+        technical lead, I navigate complex topics with ease, offering tips and
+        strategies to excel in the ever-changing tech landscape.
       </p>
     </div>
   );
