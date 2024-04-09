@@ -67,12 +67,14 @@ export default (): ReactElement => {
       </div>
       <Parallax scale={[1, 0]} opacity={[1.3, 0]}>
         <div className="home__scroll-indicator">
-          <Animation
-            height={75}
-            options={animationOptions}
-            animation="scroll"
-            width={75}
-          />
+          {callToActionActive && (
+            <Animation
+              height={75}
+              options={animationOptions}
+              animation="scroll"
+              width={75}
+            />
+          )}
         </div>
       </Parallax>
     </>
