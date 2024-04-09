@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "set PORT=3006 && node scripts/start.js",
+    "start": "set PORT=3005 && node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "tailwind": "npx tailwindcss -i ./src/tailwind.css -o ./src/tailwind-out.css",
