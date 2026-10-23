@@ -32,7 +32,7 @@ export function Hero() {
         </Reveal>
       </div>
       <div className="hero__proof">
-        <Marquee items={marquee} duration="36s" />
+        <Marquee items={marquee} speed={56} />
       </div>
       <a className="hero__scroll caption" href="#now" aria-label="Scroll to the work"><span /></a>
     </section>

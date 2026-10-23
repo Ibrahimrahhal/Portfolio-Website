@@ -126,16 +126,38 @@ export function ProjectCard({ title, meta, description, stack, href, image, alt,
   );
 }
 
-/* Marquee */
-export function Marquee({ items = [], duration = '32s', className }) {
-  const row = (hidden) => (
-    <div className="rh-mq__row" aria-hidden={hidden ? 'true' : undefined}>
-      {items.map((it, i) => <span key={i} className="rh-mq__item">{it}</span>)}
-    </div>
-  );
+/* Marquee: repeats the list until it covers the container twice, then scrolls by exactly one copy
+   at a constant speed (px per second), so it loops seamlessly at any width. */
+export function Marquee({ items = [], speed = 56, className }) {
+  const wrap = useRef(null);
+  const first = useRef(null);
+  const [copies, setCopies] = useState(2);
+  const [shift, setShift] = useState(0);
+  useEffect(() => {
+    const measure = () => {
+      const w = wrap.current ? wrap.current.clientWidth : 0;
+      const rw = first.current ? first.current.getBoundingClientRect().width : 0;
+      if (!w || !rw) return;
+      setShift(rw);
+      setCopies(Math.max(2, Math.ceil(w / rw) + 1));
+    };
+    measure();
+    const ro = 'ResizeObserver' in window ? new ResizeObserver(measure) : null;
+    if (ro && wrap.current) ro.observe(wrap.current);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(measure);
+    window.addEventListener('resize', measure);
+    return () => { if (ro) ro.disconnect(); window.removeEventListener('resize', measure); };
+  }, [items.length]);
+  const duration = shift ? `${(shift / speed).toFixed(2)}s` : '30s';
   return (
-    <div className={cx('rh-mq', className)} style={{ '--rh-mq-duration': duration }}>
-      <div className="rh-mq__track">{row(false)}{row(true)}</div>
+    <div ref={wrap} className={cx('rh-mq', className)} style={{ '--rh-mq-duration': duration, '--rh-mq-shift': shift ? `${shift}px` : '50%' }}>
+      <div className="rh-mq__track">
+        {Array.from({ length: copies }, (_, c) => (
+          <div key={c} ref={c === 0 ? first : undefined} className="rh-mq__row" aria-hidden={c > 0 ? 'true' : undefined}>
+            {items.map((it, i) => <span key={i} className="rh-mq__item">{it}</span>)}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

@@ -106,7 +106,7 @@
   font-family: var(--font-display); font-style: italic; font-weight: 500; font-size: 18px; line-height: 1;
   color: var(--ink-muted); white-space: nowrap;
 }
-@keyframes rh-marquee { to { transform: translateX(-50%); } }
+@keyframes rh-marquee { to { transform: translateX(calc(-1 * var(--rh-mq-shift, 50%))); } }
 
 /* Commit */
 .rh-cm {
