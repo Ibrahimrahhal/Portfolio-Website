@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Button, ChapterHeading, Chip, Commit, Marquee, cx } from './components/index.jsx';
+import { Arrow, Button, ChapterHeading, Chip, Commit, Marquee, cx } from './components/index.jsx';
 import { Counter, Magnetic, Scanner, SectionHead, Showcase, VideoEmbed, useLightbox } from './components/cinematic.jsx';
 import { useReveal } from './hooks.js';
 import { before, code, contact, hero, links, marquee, notes, now, photos, shift, ventures } from './content.js';
@@ -229,23 +229,37 @@ export function Code() {
 }
 
 export function Notes() {
+  const [featured, ...rest] = notes.posts;
+  const Card = ({ p, i, featured: isFeatured }) => (
+    <Reveal as="li" key={p.href} delay={(i % 2) * 100} className={cx('note', isFeatured && 'note--featured')}>
+      <a className="note__link" href={p.href} target="_blank" rel="noreferrer">
+        <div className="note__meta">
+          <span className="rh-eyebrow">{String(i + 1).padStart(2, '0')} · {p.date} · {p.read}</span>
+          <Chip tone={isFeatured ? 'petra' : undefined}>{isFeatured ? 'Latest' : p.topic}</Chip>
+        </div>
+        <h3 className={cx('note__title', isFeatured ? 'display-lg' : 'display-sm')}>{p.title}</h3>
+        <p className="note__dek body-sm">{p.dek}</p>
+        <span className="note__foot caption">
+          {isFeatured ? <Chip>{p.topic}</Chip> : null}
+          <span className="note__cta">Read on Medium <Arrow /></span>
+        </span>
+      </a>
+    </Reveal>
+  );
   return (
     <section className="sec sec--notes" id="notes" aria-labelledby="notes-title">
-      <SectionHead id="notes-title" numeral={notes.numeral} eyebrow={notes.eyebrow} emphasis={notes.emphasis} size="md">{notes.heading}</SectionHead>
-      <ol className="posts">
-        {notes.posts.map((p, i) => (
-          <Reveal as="li" key={p.title} delay={i * 60}>
-            <a className="post" href={p.href} target="_blank" rel="noreferrer">
-              <span className="post__index display-md">{String(i + 1).padStart(2, '0')}</span>
-              <span className="post__title display-sm">{p.title}</span>
-              <span className="post__read caption">{p.read}</span>
-            </a>
+      <div className="notes">
+        <div className="notes__intro">
+          <SectionHead id="notes-title" numeral={notes.numeral} eyebrow={notes.eyebrow} emphasis={notes.emphasis} lead={notes.lead} size="md">{notes.heading}</SectionHead>
+          <Reveal delay={200}>
+            <Magnetic><Button variant="ghost" href={notes.medium} target="_blank" rel="noreferrer">All posts on Medium</Button></Magnetic>
           </Reveal>
-        ))}
-      </ol>
-      <Reveal className="posts__more" delay={120}>
-        <Magnetic><Button variant="ghost" href={notes.medium} target="_blank" rel="noreferrer">All posts on Medium</Button></Magnetic>
-      </Reveal>
+        </div>
+        <ol className="notes__grid">
+          <Card p={featured} i={0} featured />
+          {rest.map((p, i) => <Card key={p.href} p={p} i={i + 1} />)}
+        </ol>
+      </div>
     </section>
   );
 }

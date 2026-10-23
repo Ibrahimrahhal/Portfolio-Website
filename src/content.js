@@ -6,8 +6,8 @@ export const nav = [
   { label: 'The shift', href: '#shift' },
   { label: 'Ventures', href: '#ventures' },
   { label: 'Photos', href: '#photos' },
-  { label: 'Code', href: '#code' },
   { label: 'Notes', href: '#notes' },
+  { label: 'Code', href: '#code' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -156,7 +156,7 @@ export const photos = {
 };
 
 export const code = {
-  numeral: '05',
+  numeral: '06',
   eyebrow: 'OPEN SOURCE',
   heading: 'Small tools, still maintained.',
   emphasis: 'still',
@@ -173,20 +173,21 @@ export const code = {
 };
 
 export const notes = {
-  numeral: '06',
+  numeral: '05',
   eyebrow: 'WRITING',
   heading: 'Notes from the road.',
   emphasis: 'road',
+  lead: 'Eight pieces on Medium, mostly about building fast and working well. The webpack one is the most read; the email one is the most forwarded.',
   medium: 'https://medium.com/@ibrahim.rahhal',
   posts: [
-    { title: 'The software engineer\'s survival guide to 2025\'s competitive job market', read: 'Jan 2025', href: 'https://medium.com/@ibrahim.rahhal/the-software-engineers-survival-guide-to-2025-s-competitive-job-market-993748f3ee1e' },
-    { title: 'ReactJS: beginner to senior-level developer, part 1', read: 'Dec 2024', href: 'https://medium.com/@ibrahim.rahhal/reactjs-beginner-to-senior-level-developer-part-1-getting-started-32948b762e28' },
-    { title: 'This could have been an email', read: 'Dec 2024', href: 'https://medium.com/@ibrahim.rahhal/this-could-have-been-an-email-4d417e74a9ee' },
-    { title: 'Ninja your way to the top: 7 tips I wish I knew for your tech career', read: 'Mar 2023', href: 'https://medium.com/@ibrahim.rahhal/ninja-your-way-to-the-top-10-tips-i-wish-i-knew-for-crushing-it-in-your-tech-career-4960b7d58b44' },
-    { title: 'Speeding up webpack: our story of 95% faster builds', read: 'Mar 2023', href: 'https://medium.com/@ibrahim.rahhal/speeding-up-webpack-build-times-our-success-story-of-95-faster-builds-55a4742d6ad3' },
-    { title: 'Why algorithms are equally important for front-end engineers', read: 'Jan 2023', href: 'https://medium.com/@ibrahim.rahhal/why-algorithms-are-equally-important-for-front-end-engineers-10938a2aa568' },
-    { title: 'Unleashing the power of JavaScript ASTs', read: 'Jan 2023', href: 'https://medium.com/@ibrahim.rahhal/unleashing-the-power-of-javascript-asts-fb727d9fe34f' },
-    { title: 'The complete webpack guide for beginners', read: 'Jan 2023', href: 'https://medium.com/@ibrahim.rahhal/the-complete-webpack-guide-for-beginners-9a15838bc6d3' },
+    { title: 'The software engineer\'s survival guide to 2025\'s competitive job market', dek: 'AI is reshaping engineering jobs. Learn the tools, the soft skills and the problem-solving that still set you apart.', topic: 'Career', date: 'Jan 2025', read: '6 min', href: 'https://medium.com/@ibrahim.rahhal/the-software-engineers-survival-guide-to-2025-s-competitive-job-market-993748f3ee1e' },
+    { title: 'ReactJS: beginner to senior-level developer, part 1', dek: 'What React is for, what it costs you, and the one idea underneath it: keep state and view in sync.', topic: 'React', date: 'Dec 2024', read: '5 min', href: 'https://medium.com/@ibrahim.rahhal/reactjs-beginner-to-senior-level-developer-part-1-getting-started-32948b762e28' },
+    { title: 'This could have been an email', dek: 'How to spot the meeting that should not exist, and how to decline it without making enemies.', topic: 'Leadership', date: 'Dec 2024', read: '6 min', href: 'https://medium.com/@ibrahim.rahhal/this-could-have-been-an-email-4d417e74a9ee' },
+    { title: 'Ninja your way to the top: 7 tips I wish I knew for your tech career', dek: 'Prioritise impact, build soft skills, switch jobs on purpose, take initiative, ship in the open.', topic: 'Career', date: 'Mar 2023', read: '9 min', href: 'https://medium.com/@ibrahim.rahhal/ninja-your-way-to-the-top-10-tips-i-wish-i-knew-for-crushing-it-in-your-tech-career-4960b7d58b44' },
+    { title: 'Speeding up webpack: our story of 95% faster builds', dek: 'Cache the dependencies, parallelise across cores, and watch a 20-minute build fall to under one.', topic: 'Build tooling', date: 'Mar 2023', read: '6 min', href: 'https://medium.com/@ibrahim.rahhal/speeding-up-webpack-build-times-our-success-story-of-95-faster-builds-55a4742d6ad3' },
+    { title: 'Why algorithms are equally important for front-end engineers', dek: 'Data structures are not a back-end thing. Real project examples where the right one saved the day.', topic: 'Fundamentals', date: 'Jan 2023', read: '7 min', href: 'https://medium.com/@ibrahim.rahhal/why-algorithms-are-equally-important-for-front-end-engineers-10938a2aa568' },
+    { title: 'Unleashing the power of JavaScript ASTs', dek: 'What an abstract syntax tree is, and how it powers Babel plugins, ESLint rules and codemods.', topic: 'JavaScript', date: 'Jan 2023', read: '8 min', href: 'https://medium.com/@ibrahim.rahhal/unleashing-the-power-of-javascript-asts-fb727d9fe34f' },
+    { title: 'The complete webpack guide for beginners', dek: 'Loaders, plugins and a first config file, explained from zero.', topic: 'Build tooling', date: 'Jan 2023', read: '6 min', href: 'https://medium.com/@ibrahim.rahhal/the-complete-webpack-guide-for-beginners-9a15838bc6d3' },
   ],
 };
 

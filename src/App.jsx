@@ -41,8 +41,8 @@ export default function App() {
         <Shift />
         <Ventures />
         <Photos />
-        <Code />
         <Notes />
+        <Code />
         <Contact />
       </main>
       <div className="nav-dock">
