@@ -1,7 +1,0 @@
-/* this import includes relaway & cabin font; I'm using a single import to minimize the requests */
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Cabin&family=Raleway&display=swap');
-$fonts: (
-    "primary": 'Raleway', 
-    "secondary": 'Cabin',
-    "unique": 'Arvo'
-);
