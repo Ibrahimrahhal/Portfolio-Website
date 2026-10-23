@@ -230,6 +230,8 @@ a { color: inherit; }
 .post__title { font-weight: 400; }
 .post__read { color: var(--ink-muted); }
 
+.posts__more { margin-top: var(--space-8); }
+
 /* Contact */
 .sec--contact { padding-bottom: 160px; }
 .sec--contact .rh-ch__title { max-width: 12ch; }

@@ -235,7 +235,7 @@ export function Notes() {
       <ol className="posts">
         {notes.posts.map((p, i) => (
           <Reveal as="li" key={p.title} delay={i * 60}>
-            <a className="post" href={p.href}>
+            <a className="post" href={p.href} target="_blank" rel="noreferrer">
               <span className="post__index display-md">{String(i + 1).padStart(2, '0')}</span>
               <span className="post__title display-sm">{p.title}</span>
               <span className="post__read caption">{p.read}</span>
@@ -243,6 +243,9 @@ export function Notes() {
           </Reveal>
         ))}
       </ol>
+      <Reveal className="posts__more" delay={120}>
+        <Magnetic><Button variant="ghost" href={notes.medium} target="_blank" rel="noreferrer">All posts on Medium</Button></Magnetic>
+      </Reveal>
     </section>
   );
 }

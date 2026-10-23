@@ -177,12 +177,16 @@ export const notes = {
   eyebrow: 'WRITING',
   heading: 'Notes from the road.',
   emphasis: 'road',
+  medium: 'https://medium.com/@ibrahim.rahhal',
   posts: [
-    { title: 'Speeding up webpack: our story of 95% faster builds', read: '8 min', href: '#' },
-    { title: 'Unleashing the power of JavaScript ASTs', read: '11 min', href: '#' },
-    { title: 'Why algorithms matter for front-end engineers too', read: '6 min', href: '#' },
-    { title: 'Seven tips I wish I knew for a tech career', read: '7 min', href: '#' },
-    { title: 'The complete webpack guide for beginners', read: '14 min', href: '#' },
+    { title: 'The software engineer\'s survival guide to 2025\'s competitive job market', read: 'Jan 2025', href: 'https://medium.com/@ibrahim.rahhal/the-software-engineers-survival-guide-to-2025-s-competitive-job-market-993748f3ee1e' },
+    { title: 'ReactJS: beginner to senior-level developer, part 1', read: 'Dec 2024', href: 'https://medium.com/@ibrahim.rahhal/reactjs-beginner-to-senior-level-developer-part-1-getting-started-32948b762e28' },
+    { title: 'This could have been an email', read: 'Dec 2024', href: 'https://medium.com/@ibrahim.rahhal/this-could-have-been-an-email-4d417e74a9ee' },
+    { title: 'Ninja your way to the top: 7 tips I wish I knew for your tech career', read: 'Mar 2023', href: 'https://medium.com/@ibrahim.rahhal/ninja-your-way-to-the-top-10-tips-i-wish-i-knew-for-crushing-it-in-your-tech-career-4960b7d58b44' },
+    { title: 'Speeding up webpack: our story of 95% faster builds', read: 'Mar 2023', href: 'https://medium.com/@ibrahim.rahhal/speeding-up-webpack-build-times-our-success-story-of-95-faster-builds-55a4742d6ad3' },
+    { title: 'Why algorithms are equally important for front-end engineers', read: 'Jan 2023', href: 'https://medium.com/@ibrahim.rahhal/why-algorithms-are-equally-important-for-front-end-engineers-10938a2aa568' },
+    { title: 'Unleashing the power of JavaScript ASTs', read: 'Jan 2023', href: 'https://medium.com/@ibrahim.rahhal/unleashing-the-power-of-javascript-asts-fb727d9fe34f' },
+    { title: 'The complete webpack guide for beginners', read: 'Jan 2023', href: 'https://medium.com/@ibrahim.rahhal/the-complete-webpack-guide-for-beginners-9a15838bc6d3' },
   ],
 };
 
