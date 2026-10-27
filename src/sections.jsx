@@ -157,7 +157,6 @@ export function Shift() {
 
 export function Ventures() {
   const p = ventures.podcast;
-  const s = ventures.startup;
   const lb = useLightbox(p.photos);
   return (
     <section className="sec sec--ventures" id="ventures" aria-labelledby="ventures-title">
@@ -180,16 +179,22 @@ export function Ventures() {
         </div>
       </article>
       {lb.node}
-      <article className="venture venture--startup">
-        <Reveal className="venture__text">
-          <p className="rh-eyebrow">{s.eyebrow}</p>
-          <ChapterHeading as="h3" emphasis={s.emphasis} reveal>{s.heading}</ChapterHeading>
-          <p className="body">{s.text}</p>
-          <div className="tags">{s.tags.map((x) => <Chip key={x} tone="petra">{x}</Chip>)}</div>
-          {s.href ? <Magnetic><Button variant="ghost" href={s.href} target="_blank" rel="noreferrer">Visit Leasifier</Button></Magnetic> : null}
-        </Reveal>
-        {s.site ? <Showcase className="venture__site" src={s.site.src} alt={s.site.alt} url={s.site.url} href={s.href} depth={36} /> : null}
-      </article>
+      <div className="products-head">
+        <p className="rh-eyebrow">{ventures.productsEyebrow}</p>
+      </div>
+      <ul className="prods">
+        {ventures.products.map((pr, i) => (
+          <Reveal as="li" key={pr.name} delay={i * 120} className="prod">
+            <Showcase className="prod__site" src={pr.site.src} alt={pr.site.alt} url={pr.site.url} href={pr.href} depth={24} />
+            <div className="prod__text">
+              <p className="rh-eyebrow">{pr.eyebrow}</p>
+              <h3 className="display-md"><a className="product__link" href={pr.href} target="_blank" rel="noreferrer">{pr.name}</a></h3>
+              <p className="body-sm">{pr.text}</p>
+              <div className="tags">{pr.tags.map((x) => <Chip key={x}>{x}</Chip>)}</div>
+            </div>
+          </Reveal>
+        ))}
+      </ul>
     </section>
   );
 }

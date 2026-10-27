@@ -24,12 +24,12 @@ export const hero = {
   name: 'Ibrahim Rahhal.',
   emphasis: 'Rahhal.',
   line: 'Seven years shipping the journals 2.5 million scientists read every morning, then running the team that built them. Now building the AI that finds what pentesters miss.',
-  also: 'Also: co-founder of Leasifier, co-host of Bit wa Byte, and the one with the camera.',
+  also: 'Also: SpeakLens, Open Mate and Leasifier on the side, co-host of Bit wa Byte, and the one with the camera.',
   primary: { label: 'See the work', href: '#now' },
   secondary: { label: 'Résumé', href: '/resume.pdf' },
 };
 
-export const marquee = ['Corgea', 'Y Combinator', 'Wiley', 'Science.org', 'PNAS', 'Leasifier', 'Bit wa Byte', 'University of Jordan'];
+export const marquee = ['Corgea', 'Y Combinator', 'Wiley', 'Science.org', 'PNAS', 'SpeakLens', 'Open Mate', 'Leasifier', 'Bit wa Byte', 'University of Jordan'];
 
 export const now = {
   numeral: '01',
@@ -109,8 +109,9 @@ export const shift = {
 export const ventures = {
   numeral: '03',
   eyebrow: 'VENTURES',
-  heading: 'Two things I started on the side.',
+  heading: 'Things I build on the side.',
   emphasis: 'side.',
+  lead: 'A podcast, and three products with real users. Evenings, weekends and the occasional flight.',
   podcast: {
     eyebrow: 'CO-HOST · PODCAST',
     heading: 'Bit wa Byte.',
@@ -124,15 +125,12 @@ export const ventures = {
       { src: '/story/podcast-neon.webp', alt: 'Recording an episode under neon lights', caption: 'On set, take two' },
     ],
   },
-  startup: {
-    eyebrow: 'CO-FOUNDER',
-    heading: 'Leasifier.',
-    emphasis: 'Leasifier.',
-    text: 'Renting in Jordan, without the phone calls. Leasifier matches landlords and tenants with AI-ranked listings and a map search, then handles the rest: contracts signed online, rent collected online, tenant screening and legal representation included.',
-    href: 'https://leasifier.com',
-    site: { src: '/story/leasifier.jpg', url: 'leasifier.com', alt: 'The Leasifier website' },
-    tags: ['Proptech', 'AI matching', 'Online payments', 'Legal'],
-  },
+  productsEyebrow: 'PRODUCTS',
+  products: [
+    { eyebrow: 'FOUNDER · EARLY ACCESS', name: 'SpeakLens', emphasis: 'SpeakLens', text: 'Your meetings are your English lessons. A desktop app that listens to your real calls, no bot in the room, then shows what you were trying to say, the mistakes you repeat and how your level moves from one meeting to the next.', tags: ['Mac & Windows', 'Speech AI', 'CEFR tracking'], href: 'https://www.speaklens.si', site: { src: '/story/speaklens.jpg', url: 'speaklens.si', alt: 'The SpeakLens website: your meetings are your English lessons' } },
+    { eyebrow: 'FOUNDER · EARLY ACCESS', name: 'Open Mate', emphasis: 'Mate', text: 'Hire a team, not a chatbot. Five specialist AI helpers for training, meals, money, mood and trips. They remember what you tell them, keep the tallies honest and check in on their own schedule.', tags: ['iOS', 'Android', 'Web', 'AI agents'], href: 'https://openmate.si', site: { src: '/story/openmate.jpg', url: 'openmate.si', alt: 'The Open Mate website: hire a team, not a chatbot' } },
+    { eyebrow: 'CO-FOUNDER · BETA', name: 'Leasifier', emphasis: 'Leasifier', text: 'Renting in Jordan, without the phone calls. AI-ranked listings and a map search, then contracts signed online, rent collected online, tenant screening and legal representation included.', tags: ['Proptech', 'AI matching', 'Online payments'], href: 'https://leasifier.com', site: { src: '/story/leasifier.jpg', url: 'leasifier.com', alt: 'The Leasifier website' } },
+  ],
 };
 
 export const photos = {
