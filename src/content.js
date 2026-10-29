@@ -24,12 +24,12 @@ export const hero = {
   name: 'Ibrahim Rahhal.',
   emphasis: 'Rahhal.',
   line: 'I spent seven years shipping the journals 2.5 million scientists read every morning, then ran the team that built them. Now I build AI that hacks for the good guys.',
-  also: 'Also: SpeakLens, Open Mate and Leasifier on the side, co-host of Bit wa Byte, and the one with the camera.',
+  also: 'Also: SpeakLens, Open Mate, Leasifier and Nomad Quest on the side, co-host of Bit wa Byte, and the one with the camera.',
   primary: { label: 'See the work', href: '#now' },
   secondary: { label: 'Résumé', href: '/resume.pdf' },
 };
 
-export const marquee = ['Corgea', 'Y Combinator', 'Wiley', 'Science.org', 'PNAS', 'SpeakLens', 'Open Mate', 'Leasifier', 'Bit wa Byte', 'University of Jordan'];
+export const marquee = ['Corgea', 'Y Combinator', 'Wiley', 'Science.org', 'PNAS', 'SpeakLens', 'Open Mate', 'Leasifier', 'Nomad Quest', 'Bit wa Byte', 'University of Jordan'];
 
 export const now = {
   numeral: '01',
@@ -111,7 +111,7 @@ export const ventures = {
   eyebrow: 'VENTURES',
   heading: 'Things I build on the side.',
   emphasis: 'side.',
-  lead: 'A podcast and three products, built in the evenings and on weekends.',
+  lead: 'A podcast and four products, built in the evenings and on weekends.',
   podcast: {
     eyebrow: 'CO-HOST · PODCAST',
     heading: 'Bit wa Byte.',
@@ -130,6 +130,7 @@ export const ventures = {
     { eyebrow: 'FOUNDER · EARLY ACCESS', name: 'SpeakLens', emphasis: 'SpeakLens', text: 'Your meetings are your English lessons. A desktop app that listens to your real calls, no bot in the room, then shows what you were trying to say, the mistakes you repeat and how your level moves from one meeting to the next.', tags: ['Mac & Windows', 'Speech AI', 'CEFR tracking'], href: 'https://www.speaklens.si', site: { src: '/story/speaklens.jpg', url: 'speaklens.si', alt: 'The SpeakLens website: your meetings are your English lessons' } },
     { eyebrow: 'FOUNDER · EARLY ACCESS', name: 'Open Mate', emphasis: 'Mate', text: 'Hire a team, not a chatbot. Five specialist AI helpers for training, meals, money, mood and trips. They remember what you tell them, keep count of what you log and check in on a schedule.', tags: ['iOS', 'Android', 'Web', 'AI agents'], href: 'https://openmate.si', site: { src: '/story/openmate.jpg', url: 'openmate.si', alt: 'The Open Mate website: hire a team, not a chatbot' } },
     { eyebrow: 'CO-FOUNDER · BETA', name: 'Leasifier', emphasis: 'Leasifier', text: 'Renting in Jordan, without the phone calls. AI-ranked listings and a map search, then contracts signed online, rent collected online, tenant screening and legal representation included.', tags: ['Proptech', 'AI matching', 'Online payments'], href: 'https://leasifier.com', site: { src: '/story/leasifier.jpg', url: 'leasifier.com', alt: 'The Leasifier website' } },
+    { eyebrow: 'FOUNDER · LIVE', name: 'Nomad Quest', emphasis: 'Quest', text: 'Every country you have set foot in, stamped into a digital passport. Log a trip and it lights up gold on a 3D globe. You start as a Dreamer and work up to Atlas, with a leaderboard for settling arguments with friends.', tags: ['iOS', 'Android', '3D globe', 'Free'], href: 'https://nomadquest.app', site: { src: '/story/nomadquest.jpg', url: 'nomadquest.app', alt: 'The Nomad Quest website: your world, your story' } },
   ],
 };
 

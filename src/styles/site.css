@@ -152,7 +152,7 @@ a { color: inherit; }
 .venture__photos .show__frame { aspect-ratio: 16 / 9; }
 .products-head { margin: var(--space-32) 0 var(--space-8); padding-top: var(--space-16); border-top: 1px solid var(--hairline); }
 .products-head .rh-eyebrow { margin: 0; color: var(--petra-ink); }
-.prods { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-8); }
+.prods { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-8); }
 .prod { margin: 0; display: grid; gap: var(--space-6); align-content: start; }
 .prod__site .show__frame { aspect-ratio: 4 / 3; }
 .prod__text .rh-eyebrow { color: var(--petra-ink); }

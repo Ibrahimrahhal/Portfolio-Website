@@ -14,7 +14,7 @@ npm run dev
 ## Where things live
 
 - `src/content.js` — every word on the page: hero, stats, sites, shift lines, repos, posts, links. Edit copy here.
-- `src/sections.jsx` — Hero, Now, Before (Wiley, with the team block), Shift, Ventures (Bit wa Byte, Leasifier), Photos, Code, Notes, Contact.
+- `src/sections.jsx` — Hero, Now, Before (Wiley, with the team block), Shift, Ventures (Bit wa Byte, SpeakLens, Open Mate, Leasifier, Nomad Quest), Photos, Code, Notes, Contact.
 - `src/components/index.jsx` — the design system components ported to JSX.
 - `src/components/cinematic.jsx` — the Scanner hero canvas, parallax Showcase frames, Lightbox viewer, Counter, Magnetic buttons, numeral SectionHead.
 - `public/shots/` — screenshots shown in the Showcase frames (`pentest.jpg`, `corgea.jpg`, `science.jpg`, `asm.jpg`, `csp.jpg`; `pnas.jpg` falls back to a wordmark card until added). Science and ASM come from 2022 Internet Archive snapshots; replace with fresh captures when you have access.
