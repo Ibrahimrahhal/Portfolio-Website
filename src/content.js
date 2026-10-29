@@ -23,7 +23,7 @@ export const hero = {
   eyebrow: 'Founding engineer · Corgea (YC) · Amman, Jordan',
   name: 'Ibrahim Rahhal.',
   emphasis: 'Rahhal.',
-  line: 'Seven years shipping the journals 2.5 million scientists read every morning, then running the team that built them. Now building the AI that finds what pentesters miss.',
+  line: 'I spent seven years shipping the journals 2.5 million scientists read every morning, then ran the team that built them. Now I build Corgea\'s AI pentester.',
   also: 'Also: SpeakLens, Open Mate and Leasifier on the side, co-host of Bit wa Byte, and the one with the camera.',
   primary: { label: 'See the work', href: '#now' },
   secondary: { label: 'Résumé', href: '/resume.pdf' },
@@ -36,7 +36,7 @@ export const now = {
   eyebrow: 'NOW · 2024 →',
   heading: 'Hundreds of attack agents, shipped on launch day.',
   emphasis: 'shipped',
-  lead: 'Corgea is a YC-backed, AI-native AppSec platform. Its AI Pentest sends hundreds of agents to map an app, attack it in parallel and hand back an auditor-ready report in hours instead of weeks. I\'m a founding engineer. I built it and demoed it in the launch video.',
+  lead: 'Corgea is a YC-backed AppSec platform. Its AI Pentest sends hundreds of agents to map an app, attack it in parallel and write an auditor-ready report in hours rather than days. I\'m a founding engineer there. I built the pentester and demoed it in the launch video.',
   shot: { src: '/shots/pentest-agents.webp', url: 'Corgea Pentest Agents · live run', href: 'https://corgea.com/products/ai-pentest', align: 'top' },
   video: {
     id: 'wzvUiEr8I2c',
@@ -44,7 +44,7 @@ export const now = {
     eyebrow: 'LAUNCH VIDEO',
     heading: 'Introducing AI Pentesting.',
     emphasis: 'Pentesting.',
-    text: 'The launch demo: me, a microphone and hundreds of attack agents. Reconnaissance to report in one take.',
+    text: 'The launch demo. I walk through one pentest from reconnaissance to the finished report.',
     href: 'https://www.youtube.com/watch?v=wzvUiEr8I2c',
   },
   stats: [
@@ -53,14 +53,14 @@ export const now = {
     { value: 'IDC', label: 'Innovator, autonomous pentesting' },
   ],
   products: [
-    { title: 'AI Pentest', text: 'Reconnaissance, attack, report. Agents map endpoints and auth flows, then work in parallel by vulnerability class and chain what they find. Authenticated and unauthenticated, one shareable report.', tags: ['LLM agents', 'Attack chaining', 'Launch demo'], href: 'https://corgea.com/products/ai-pentest' },
-    { title: 'Skills Scanning & Registry', text: 'Agents load skills. Somebody has to read them first. A scanner and a registry so the agent you trust runs code you trust.', tags: ['Agent security', 'Registry', 'Demo video'] },
+    { title: 'AI Pentest', text: 'Agents map the endpoints and auth flows, then split up by vulnerability class, attack in parallel and chain what they find. It tests both logged-in and anonymous paths and writes one report you can share.', tags: ['LLM agents', 'Attack chaining', 'Launch demo'], href: 'https://corgea.com/products/ai-pentest' },
+    { title: 'Skills Scanning & Registry', text: 'AI agents load third-party skills before they run. The scanner reads each skill first, and the registry keeps the ones that passed.', tags: ['Agent security', 'Registry', 'Demo video'] },
   ],
 };
 
 export const before = {
   numeral: '02',
-  eyebrow: 'BEFORE · WILEY · 2017 — 2024',
+  eyebrow: 'BEFORE · WILEY · 2017 TO 2024',
   heading: 'Seven years at Wiley. Lead engineer, then engineering manager.',
   emphasis: 'manager.',
   lead: 'I joined Wiley\'s Amman office as a front-end engineer, led the Science.org rebuild, and ended up running the engineering team behind some of the most-read scientific publishers on the web.',
@@ -71,15 +71,15 @@ export const before = {
     { value: '7', label: 'years, one platform' },
   ],
   sites: [
-    { title: 'Science.org', year: '2021', role: 'Lead engineer', text: 'The rebuild of the flagship. Figma-exact, on time, and read by 2.5 million people a day.', stack: ['Node', 'Java', 'Spring', 'TypeScript'], shot: { src: '/shots/science.jpg', url: 'science.org', href: 'https://www.science.org' } },
-    { title: 'PNAS', year: '2022', role: 'Lead developer', text: 'Open access to one of the most-cited journals in the world, delivered in an exceptional timeframe.', stack: ['Node', 'Spring', 'TypeScript'], shot: { src: '/shots/pnas.jpg', url: 'pnas.org', href: 'https://www.pnas.org' } },
+    { title: 'Science.org', year: '2021', role: 'Lead engineer', text: 'The flagship rebuild, matched to the Figma files and shipped on time. 2.5 million people read it every day.', stack: ['Node', 'Java', 'Spring', 'TypeScript'], shot: { src: '/shots/science.jpg', url: 'science.org', href: 'https://www.science.org' } },
+    { title: 'PNAS', year: '2022', role: 'Lead developer', text: 'One of the most-cited journals in the world, moved onto the platform on a short deadline.', stack: ['Node', 'Spring', 'TypeScript'], shot: { src: '/shots/pnas.jpg', url: 'pnas.org', href: 'https://www.pnas.org' } },
   ],
   more: { label: 'And on the same platform:', items: ['ASM Journals', 'Canadian Science Publishing', 'and a dozen more publishers'] },
   team: {
     eyebrow: 'ENGINEERING MANAGEMENT',
     heading: 'The best part was the team.',
     emphasis: 'team.',
-    text: 'Hiring, mentoring and shipping with the Amman engineers who kept those journals online every morning. The cake says "Best manager & friend". I did not bake it, but I kept the plaque.',
+    text: 'I hired and coached the Amman engineers who kept those journals online, and shipped alongside them. The cake says "Best manager & friend". I did not bake it, but I kept the plaque.',
     photos: [
       { src: '/story/wiley-team-office.webp', alt: 'The Wiley Amman engineering team in the office', caption: 'The team, Wiley Amman', wide: true },
       { src: '/story/wiley-team-event.webp', alt: 'The team at a Wiley event', caption: 'Team night out' },
@@ -95,7 +95,7 @@ export const shift = {
   lines: [
     { from: 'optimise the build', to: 'decide what to build' },
     { from: 'match the Figma', to: 'own it end to end, demo included' },
-    { from: '2.5M readers a day', to: 'a security team\'s trust, one finding at a time' },
+    { from: '2.5M readers a day', to: 'findings a security team can act on' },
   ],
   commit: {
     hash: '0xYC',
@@ -111,13 +111,13 @@ export const ventures = {
   eyebrow: 'VENTURES',
   heading: 'Things I build on the side.',
   emphasis: 'side.',
-  lead: 'A podcast, and three products with real users. Evenings, weekends and the occasional flight.',
+  lead: 'A podcast and three products, built in the evenings and on weekends.',
   podcast: {
     eyebrow: 'CO-HOST · PODCAST',
     heading: 'Bit wa Byte.',
     emphasis: 'Byte.',
     arabic: 'بت وبايت',
-    text: 'An Arabic-language tech podcast I co-host. Episodes for people starting out and for the veterans, recorded wherever the lighting is strangest.',
+    text: 'An Arabic-language tech podcast I co-host, with episodes for people starting out and for people who have been at it for years. We record wherever the lighting is strangest.',
     platforms: ['Apple Podcasts', 'Spotify', 'YouTube', 'Pocket Casts', 'RSS'],
     site: { src: '/story/podcast-site.png', url: 'bit wa byte', alt: 'The Bit wa Byte podcast website' },
     photos: [
@@ -128,7 +128,7 @@ export const ventures = {
   productsEyebrow: 'PRODUCTS',
   products: [
     { eyebrow: 'FOUNDER · EARLY ACCESS', name: 'SpeakLens', emphasis: 'SpeakLens', text: 'Your meetings are your English lessons. A desktop app that listens to your real calls, no bot in the room, then shows what you were trying to say, the mistakes you repeat and how your level moves from one meeting to the next.', tags: ['Mac & Windows', 'Speech AI', 'CEFR tracking'], href: 'https://www.speaklens.si', site: { src: '/story/speaklens.jpg', url: 'speaklens.si', alt: 'The SpeakLens website: your meetings are your English lessons' } },
-    { eyebrow: 'FOUNDER · EARLY ACCESS', name: 'Open Mate', emphasis: 'Mate', text: 'Hire a team, not a chatbot. Five specialist AI helpers for training, meals, money, mood and trips. They remember what you tell them, keep the tallies honest and check in on their own schedule.', tags: ['iOS', 'Android', 'Web', 'AI agents'], href: 'https://openmate.si', site: { src: '/story/openmate.jpg', url: 'openmate.si', alt: 'The Open Mate website: hire a team, not a chatbot' } },
+    { eyebrow: 'FOUNDER · EARLY ACCESS', name: 'Open Mate', emphasis: 'Mate', text: 'Hire a team, not a chatbot. Five specialist AI helpers for training, meals, money, mood and trips. They remember what you tell them, keep count of what you log and check in on a schedule.', tags: ['iOS', 'Android', 'Web', 'AI agents'], href: 'https://openmate.si', site: { src: '/story/openmate.jpg', url: 'openmate.si', alt: 'The Open Mate website: hire a team, not a chatbot' } },
     { eyebrow: 'CO-FOUNDER · BETA', name: 'Leasifier', emphasis: 'Leasifier', text: 'Renting in Jordan, without the phone calls. AI-ranked listings and a map search, then contracts signed online, rent collected online, tenant screening and legal representation included.', tags: ['Proptech', 'AI matching', 'Online payments'], href: 'https://leasifier.com', site: { src: '/story/leasifier.jpg', url: 'leasifier.com', alt: 'The Leasifier website' } },
   ],
 };
@@ -175,15 +175,15 @@ export const notes = {
   eyebrow: 'WRITING',
   heading: 'Notes from the road.',
   emphasis: 'road',
-  lead: 'Eight pieces on Medium, mostly about building fast and working well. The webpack one is the most read; the email one is the most forwarded.',
+  lead: 'Eight pieces on Medium, mostly about build tooling, React and getting better at the job.',
   medium: 'https://medium.com/@ibrahim.rahhal',
   posts: [
-    { title: 'The software engineer\'s survival guide to 2025\'s competitive job market', dek: 'AI is reshaping engineering jobs. Learn the tools, the soft skills and the problem-solving that still set you apart.', topic: 'Career', date: 'Jan 2025', read: '6 min', href: 'https://medium.com/@ibrahim.rahhal/the-software-engineers-survival-guide-to-2025-s-competitive-job-market-993748f3ee1e' },
-    { title: 'ReactJS: beginner to senior-level developer, part 1', dek: 'What React is for, what it costs you, and the one idea underneath it: keep state and view in sync.', topic: 'React', date: 'Dec 2024', read: '5 min', href: 'https://medium.com/@ibrahim.rahhal/reactjs-beginner-to-senior-level-developer-part-1-getting-started-32948b762e28' },
+    { title: 'The software engineer\'s survival guide to 2025\'s competitive job market', dek: 'AI is changing engineering jobs. What to learn so you stay useful, from the tools to the soft skills.', topic: 'Career', date: 'Jan 2025', read: '6 min', href: 'https://medium.com/@ibrahim.rahhal/the-software-engineers-survival-guide-to-2025-s-competitive-job-market-993748f3ee1e' },
+    { title: 'ReactJS: beginner to senior-level developer, part 1', dek: 'What React gives you and what it costs, plus the idea it is built on: keep state and view in sync.', topic: 'React', date: 'Dec 2024', read: '5 min', href: 'https://medium.com/@ibrahim.rahhal/reactjs-beginner-to-senior-level-developer-part-1-getting-started-32948b762e28' },
     { title: 'This could have been an email', dek: 'How to spot the meeting that should not exist, and how to decline it without making enemies.', topic: 'Leadership', date: 'Dec 2024', read: '6 min', href: 'https://medium.com/@ibrahim.rahhal/this-could-have-been-an-email-4d417e74a9ee' },
     { title: 'Ninja your way to the top: 7 tips I wish I knew for your tech career', dek: 'Prioritise impact, build soft skills, switch jobs on purpose, take initiative, ship in the open.', topic: 'Career', date: 'Mar 2023', read: '9 min', href: 'https://medium.com/@ibrahim.rahhal/ninja-your-way-to-the-top-10-tips-i-wish-i-knew-for-crushing-it-in-your-tech-career-4960b7d58b44' },
-    { title: 'Speeding up webpack: our story of 95% faster builds', dek: 'Cache the dependencies, parallelise across cores, and watch a 20-minute build fall to under one.', topic: 'Build tooling', date: 'Mar 2023', read: '6 min', href: 'https://medium.com/@ibrahim.rahhal/speeding-up-webpack-build-times-our-success-story-of-95-faster-builds-55a4742d6ad3' },
-    { title: 'Why algorithms are equally important for front-end engineers', dek: 'Data structures are not a back-end thing. Real project examples where the right one saved the day.', topic: 'Fundamentals', date: 'Jan 2023', read: '7 min', href: 'https://medium.com/@ibrahim.rahhal/why-algorithms-are-equally-important-for-front-end-engineers-10938a2aa568' },
+    { title: 'Speeding up webpack: our story of 95% faster builds', dek: 'Cache the dependencies and parallelise across CPU cores. Our builds got 95% faster.', topic: 'Build tooling', date: 'Mar 2023', read: '6 min', href: 'https://medium.com/@ibrahim.rahhal/speeding-up-webpack-build-times-our-success-story-of-95-faster-builds-55a4742d6ad3' },
+    { title: 'Why algorithms are equally important for front-end engineers', dek: 'Where data structures and algorithms turned up in real front-end projects, and what to study.', topic: 'Fundamentals', date: 'Jan 2023', read: '7 min', href: 'https://medium.com/@ibrahim.rahhal/why-algorithms-are-equally-important-for-front-end-engineers-10938a2aa568' },
     { title: 'Unleashing the power of JavaScript ASTs', dek: 'What an abstract syntax tree is, and how it powers Babel plugins, ESLint rules and codemods.', topic: 'JavaScript', date: 'Jan 2023', read: '8 min', href: 'https://medium.com/@ibrahim.rahhal/unleashing-the-power-of-javascript-asts-fb727d9fe34f' },
     { title: 'The complete webpack guide for beginners', dek: 'Loaders, plugins and a first config file, explained from zero.', topic: 'Build tooling', date: 'Jan 2023', read: '6 min', href: 'https://medium.com/@ibrahim.rahhal/the-complete-webpack-guide-for-beginners-9a15838bc6d3' },
   ],
