@@ -23,7 +23,7 @@ export const hero = {
   eyebrow: 'Founding engineer · Corgea (YC) · Amman, Jordan',
   name: 'Ibrahim Rahhal.',
   emphasis: 'Rahhal.',
-  line: 'I spent seven years shipping the journals 2.5 million scientists read every morning, then ran the team that built them. Now I build Corgea\'s AI pentester.',
+  line: 'I spent seven years shipping the journals 2.5 million scientists read every morning, then ran the team that built them. Now I build AI that hacks for the good guys.',
   also: 'Also: SpeakLens, Open Mate and Leasifier on the side, co-host of Bit wa Byte, and the one with the camera.',
   primary: { label: 'See the work', href: '#now' },
   secondary: { label: 'Résumé', href: '/resume.pdf' },
